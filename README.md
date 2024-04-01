@@ -92,7 +92,7 @@ Now you get a `theme` folder that has all the changes you have made. you can use
 <!-- reporting issue -->
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Constra Template. Please Search [existing issues](https://github.com/themefisher/Constra-Bootstrap-Construction-Template/issues). It’s possible someone has already reported the same problem.
+We use GitHub Issues as the official bug tracker for the Constra Template. Please Search [existing issues](https://github.com/themefisher/Constra-Bootstrap-Construction-Template/issues). It's possible someone has already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/Constra-Bootstrap-Construction-Template/issues).
 
 <!-- support -->

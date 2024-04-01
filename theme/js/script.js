@@ -301,11 +301,12 @@ class MyFooter extends HTMLElement {
             <ul>
               <li><a href="https://wa.me/905324102112" aria-label="Whatsapp"><i
                 class="fab fa-whatsapp"></i></a></li>
-              <li><a href="https://telegram.com/themefisher" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-              </li>
+<!--              <li><a href="https://telegram.com/themefisher" aria-label="Telegram"><i class="fab fa-telegram"></i></a>-->
+<!--              </li>-->
               <li><a href="https://www.instagram.com/ermisdemirerhukukburosu/" aria-label="Instagram"><i
                 class="fab fa-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/in/necat-ermi%C5%9F-305807109" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/r%C4%B1dvan-demirer-747b0616b" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div><!-- Footer social end -->
         </div><!-- Col end -->
@@ -322,11 +323,12 @@ class MyFooter extends HTMLElement {
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
           <h3 class="widget-title">HİZMETLERİMİZ</h3>
           <ul class="list-arrow">
-            <li><a href="404.html">Aile Hukuku</a></li>
-            <li><a href="404.html">Ceza Hukuku</a></li>
-            <li><a href="404.html">İcra ve İflas Hukuku</a></li>
+            <li><a href="aile-hukuku.html">Aile Hukuku</a></li>
+            <li><a href="ceza-hukuku.html">Ceza Hukuku</a></li>
+            <li><a href="icra-hukuku.html">İcra ve İflas Hukuku</a></li>
             <li><a href="404.html">İş Hukuku</a></li>
             <li><a href="404.html">Ticaret Hukuku</a></li>
+            <li><a href="tuketici-hukuku.html">Tüketici Hukuku</a></li>
           </ul>
         </div><!-- Col end -->
       </div><!-- Row end -->
@@ -349,7 +351,7 @@ class MyFooter extends HTMLElement {
             <ul class="list-unstyled">
               <li><a href="about.html">Hakkımızda</a></li>
               <li><a href="services.html">Hizmetlerimiz</a></li>
-              <!-- <li><a href="news.html">Yayınlar</a></li> -->
+              <li><a href="aile-hukuku.html">Yayınlar</a></li>
               <li><a href="contact.html">İletişim</a></li>
             </ul>
           </div>
@@ -445,13 +447,14 @@ class MyHeader extends HTMLElement {
                   <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">YAYINLAR <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="news.html">TÜMÜ</a></li>
                       <li><a href="aile-hukuku.html">AİLE HUKUKU</a></li>
-                      <li><a href="news-single.html">CEZA HUKUKU</a></li>
-                      <li><a href="news-single.html">İCRA VE İFLAS HUKUKU</a></li>
-                      <li><a href="news-single.html">İŞ HUKUKU</a></li>
-                      <li><a href="news-single.html">TİCARET HUKUKU</a></li>
-                      <li><a href="news-single.html">KİRA HUKUKU</a></li>
+                      <li><a href="ceza-hukuku.html">CEZA HUKUKU</a></li>
+                      <li><a href="icra-hukuku.html">İCRA VE İFLAS HUKUKU</a></li>
+                      <li><a href="404.html">İŞ HUKUKU</a></li>
+                      <li><a href="404.html">TİCARET HUKUKU</a></li>
+                      <li><a href="404.html">GAYRİMENKUL HUKUKU</a></li>
+                      <li><a href="tuketici-hukuku.html">TÜKETİCİ HUKUKU</a></li>
+                      <li><a href="dava-turleri.html">DAVA TÜRLERİ</a></li>
                     </ul>
                   </li>
 
@@ -522,3 +525,28 @@ class TopBar extends HTMLElement {
 }
 
 customElements.define('top-bar', TopBar)
+
+//kategoriler
+
+class Categories extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML =
+      `
+            <div class="widget">
+               <h3 class="widget-title">KATEGORİLER</h3>
+                <ul class="arrow nav nav-tabs">
+                  <li><a href="aile-hukuku.html">Aile Hukuku</a></li>
+                  <li><a href="ceza-hukuku.html">Ceza Hukuku</a></li>
+                  <li><a href="icra-hukuku.html">İcra ve İflas Hukuku</a></li>
+                  <li><a href="404.html">İş Hukuku</a></li>
+                  <li><a href="404.html">Ticaret Hukuku</a></li>
+                  <li><a href="404.html">Gayrimenkul Hukuku</a></li>
+                  <li><a href="tuketici-hukuku.html">Tüketici Hukuku</a></li>
+                  <li><a href="dava-turleri.html">Dava Türleri</a></li>
+                </ul>
+            </div>
+      `
+  }
+}
+customElements.define('my-categories', Categories)
+
