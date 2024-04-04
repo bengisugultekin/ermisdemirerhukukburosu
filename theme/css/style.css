@@ -747,11 +747,18 @@ ul.navbar-nav > li.active > a {
 
 /*-- Logo --*/
 .logo img {
+  max-width: 330px;
   width: auto;
-  height: 55px;
-  float: left
+  height: 50px;
+  float: left;
 }
 
+/* For Tablets */
+@media screen and (max-width: 991px) {
+  .logo img {
+    float: none;
+  }
+}
 
 .header-two .logo img {
   height: 30px;
@@ -2400,6 +2407,15 @@ img.testimonial-thumb {
   top: 0;
 }
 
+
+/* For Tablets */
+@media screen and (max-width: 767px) {
+  .ts-newsletter:after {
+    background : #ffb600;
+  }
+}
+
+
 .newsletter-form input {
   background: none;
   font-size: 12px;
@@ -3507,10 +3523,10 @@ label {
 
 .whats-float {
   position: fixed;
-  transform:translate(108px,0px);
-  top:25%;
-  right:0;
-  width:150px;
+  transform: translate(108px, 0px);
+  top: 25%;
+  right: 0;
+  width: 150px;
   overflow: hidden;
   background-color: #25d366;
   color: #FFFFFF;
@@ -3519,6 +3535,7 @@ label {
   transition: all 0.5s ease-in-out;
   vertical-align: middle
 }
+
 .whats-float a span {
   color: white;
   font-size: 18px;
@@ -3534,25 +3551,34 @@ label {
   color: white;
   line-height: 30px;
   padding: 10px;
-  transform:rotate(0deg);
+  transform: rotate(0deg);
   transition: all 0.5s ease-in-out;
-  text-align:center;
+  text-align: center;
 
 }
 
 .whats-float:hover {
   color: #FFFFFF;
-  transform:translate(0px,0px);
+  transform: translate(0px, 0px);
 }
 
-.whats-float:hover i  {
-  transform:rotate(360deg);
+.whats-float:hover i {
+  transform: rotate(360deg);
 }
 
-h1{
+h1 {
   color: #fff;
   font-size: 3.625em;
   text-align: center;
   margin-top: 20%;
 }
+
+/* For Tablets */
+@media screen and (max-width: 991px) {
+  .img-fluid {
+    max-width: 60%;
+  }
+}
+
+
 
