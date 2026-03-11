@@ -1,0 +1,52 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  {% include "components/breadcrumb.njk" %}
+
+  <section id="main-container" class="main-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-0">
+          <div class="sidebar sidebar-left">
+            {% include "components/sidebar.njk" %}
+          </div>
+          <!-- Sidebar end -->
+        </div>
+        <!-- Sidebar Col end -->
+
+        <div class="col-lg-8 mb-5 mb-lg-0 order-0 order-lg-1">
+          {% for article in collections[category] %}
+          <div class="post">
+            <div class="post-body">
+              <div class="entry-header">
+                <div class="post-meta">
+                  <span class="post-comment"><i class="far fa-calendar"></i> {{ article.data.date | formatDate }}</span>
+                </div>
+                <h2 class="entry-title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h2>
+              </div>
+              <!-- header end -->
+              <div class="entry-content">
+                {% if article.data.description %}
+                  <p>{{ article.data.description }}</p>
+                {% else %}
+                  {{ article.templateContent | truncate(200) | safe }}
+                {% endif %}
+              </div>
+              <div class="post-footer">
+                <a href="{{ article.url }}" class="btn btn-primary">DEVAMINI OKUYUNUZ</a>
+              </div>
+            </div>
+          </div>
+          <!-- post end -->
+          {% endfor %}
+        </div>
+        <!-- Content Col end -->
+      </div>
+      <!-- Main row end -->
+    </div>
+    <!-- Container end -->
+  </section>
+  <!-- Main container end -->
+{% endblock %}

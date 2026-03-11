@@ -1,0 +1,64 @@
+{
+  "main": [
+    {
+      "title": "Anasayfa",
+      "url": "/"
+    },
+    {
+      "title": "Hakkımızda",
+      "url": "/about/",
+      "children": [
+        {
+          "title": "Biz Kimiz",
+          "url": "/about/"
+        }
+      ]
+    },
+    {
+      "title": "Hizmetlerimiz",
+      "url": "/services/"
+    },
+    {
+      "title": "Yayınlar",
+      "url": "#",
+      "children": [
+        {
+          "title": "Aile Hukuku",
+          "url": "/aile-hukuku/"
+        },
+        {
+          "title": "Ceza Hukuku",
+          "url": "/ceza-hukuku/"
+        },
+        {
+          "title": "İcra ve İflas Hukuku",
+          "url": "/icra-hukuku/"
+        },
+        {
+          "title": "İş Hukuku",
+          "url": "/is-hukuku/"
+        },
+        {
+          "title": "Ticaret Hukuku",
+          "url": "/ticaret-hukuku/"
+        },
+        {
+          "title": "Gayrimenkul Hukuku",
+          "url": "/gayrimenkul-hukuku/"
+        },
+        {
+          "title": "Tüketici Hukuku",
+          "url": "/tuketici-hukuku/"
+        },
+        {
+          "title": "Dava Türleri",
+          "url": "/dava-turleri/"
+        }
+      ]
+    },
+    {
+      "title": "İletişim",
+      "url": "/contact/"
+    }
+  ]
+}

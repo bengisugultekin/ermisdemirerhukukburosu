@@ -1,0 +1,36 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  {% include "components/breadcrumb.njk" %}
+
+  <section id="main-container" class="main-container pb-2">
+    <div class="container">
+      <div class="row">
+        {% for service in services.categories %}
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="ts-service-box">
+            <div class="ts-service-image-wrapper">
+              <img loading="lazy" class="w-100" src="/{{ service.image }}" alt="service-image">
+            </div>
+            <div class="d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="/{{ service.icon }}" alt="service-icon">
+              </div>
+              <div class="ts-service-info">
+                <h3 class="service-box-title"><a href="{{ service.url }}">{{ service.title }}</a></h3>
+                <p>{{ service.description }}</p>
+                <a class="learn-more d-inline-block" href="{{ service.url }}" aria-label="service-details"><i class="fa fa-caret-right"></i> Daha fazla</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service end -->
+        </div>
+        <!-- Col end -->
+        {% endfor %}
+      </div>
+      <!-- Main row end -->
+    </div>
+    <!-- Container end -->
+  </section>
+  <!-- Main container end -->
+{% endblock %}

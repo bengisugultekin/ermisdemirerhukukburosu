@@ -1,0 +1,27 @@
+{
+  "title": "Ermiş & Demirer Hukuk Bürosu",
+  "description": "Avukatlık ve Danışmanlık Bürosu",
+  "url": "https://ermisdemirerhukuk.av.tr",
+  "googleSiteVerification": "-QyRbmMtAZpKeJkhwpO4_3zZbndr5H78wm1y-jAYUIU",
+  "contact": {
+    "phone": "(0532) 410 21 12",
+    "office": "(0232) 502 39 08",
+    "email": "info@ermisdemirerhukuk.av.tr",
+    "address": "Lider Centrio B Blok, Bayraklı",
+    "addressFull": "Mansuroğlu, 1593/1. Sk, Lider Centrio, No: 4 B blok D: 62, Bayraklı/İzmir",
+    "whatsapp": "905324102112"
+  },
+  "social": {
+    "whatsapp": "https://wa.me/905324102112",
+    "instagram": "https://www.instagram.com/ermisdemirerhukukburosu/",
+    "linkedin": [
+      "https://www.linkedin.com/in/necat-ermi%C5%9F-305807109",
+      "https://www.linkedin.com/in/r%C4%B1dvan-demirer-747b0616b"
+    ]
+  },
+  "workingHours": {
+    "weekdays": "08:00 - 19:00",
+    "saturday": "10:00 - 15:00",
+    "description": "Haftanın 6 günü, bayram ve resmi tatiller hariç her gün çalışıyoruz. Acil bir durumda bizimle iletişime geçiniz."
+  }
+}

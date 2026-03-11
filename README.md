@@ -1,124 +1,178 @@
-# Constra - Free bootstrap construction template
+# Ermiş & Demirer Hukuk Bürosu Website
 
-Constra is a theme for professional builders, construction or even industrial production companies with a focus on presenting the team, current and recent projects. Responsive development of the layouts makes the theme look good on any modern device.
+Modern, maintainable static website built with Eleventy (11ty), Nunjucks templates, and Markdown content.
 
-<!-- demo -->
-## Example Site
-
-| [![](screenshots/homepage-1.png)](https://demo.themefisher.com/constra/) | [![](screenshots/homepage-2.png)](https://demo.themefisher.com/constra/index-2.html) | [![](screenshots/about.png)](https://demo.themefisher.com/constra/about.html) |
-|:---:|:---:|:---:|
-| **Homepage 1**  | **Homepage 2**  | **About**  |
-| [![](screenshots/service.png)](https://demo.themefisher.com/constra/services.html) | [![](screenshots/project.png)](https://demo.themefisher.com/constra/projects.html) | [![](screenshots/news.png)](https://demo.themefisher.com/constra/news-right-sidebar.html) |
-| **Service** | **Project** | **News** |
-
-👉🏻[View Live Preview](https://demo.themefisher.com/constra/)
-
-<!-- resources -->
-## Pages
-
-* **Homepage 1**
-* **Homepage 2**
-* **About**
-* **Services**
-* **Service Details**
-* **Projects**
-* **Projects Details**
-* **Pricing**
-* **Team**
-* **Testimonials**
-* **News Left Sidebar**
-* **News Right Sidebar**
-* **News Details**
-* **FAQ**
-* **404**
-* **Typography**
-* **Contact**
-
-<!-- download -->
-## Download And installation
-
-Download this template from [Github](https://github.com/themefisher/constra/archive/main.zip)
-
-<!-- installation -->
-### Basic Usages
-
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
-
-### Advanced Usage
-
-For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
-#### Install prerequisites (once for a machine)
-
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Gulp Installation:** Install gulp globally from your terminal
+## Project Structure
 
 ```
-npm install --global gulp-cli
+ermisdemirerhukukburosu/
+├── src/                          # Source files
+│   ├── _data/                    # Global data files (JSON)
+│   │   ├── site.json            # Site metadata, contact info
+│   │   ├── navigation.json      # Menu structure
+│   │   └── services.json        # Service categories
+│   ├── _includes/               # Reusable template partials
+│   │   ├── layouts/            # Page layouts
+│   │   ├── components/         # Reusable components
+│   │   └── macros/            # Template macros
+│   ├── content/                 # Markdown content files
+│   │   ├── pages/              # Regular pages
+│   │   └── articles/           # Legal articles by category
+│   ├── assets/                  # Static assets
+│   │   ├── scss/               # Stylesheets
+│   │   ├── js/                 # JavaScript files
+│   │   └── images/             # Images
+│   └── static/                  # Files copied as-is
+├── dist/                        # Build output (deployed)
+├── .eleventy.js                 # Eleventy configuration
+└── package.json
 ```
 
-Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
+## Getting Started
 
-#### Local setup
+### Prerequisites
 
-After successfully installing those dependencies, open this theme with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+- Node.js (v14 or higher)
+- npm
 
-* Install dependencies
+### Installation
 
-```
+```bash
 npm install
 ```
 
-* Run locally
+### Development
 
-```
+Start the development server with live reload:
+
+```bash
 npm run dev
 ```
 
-After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live reload the browser when changes are saved.
+The site will be available at `http://localhost:8080`
 
-#### Production Build
+### Build
 
-After finishing all the customization, you can create a production build by running this command.
+Build the site for production:
 
-```
+```bash
 npm run build
 ```
 
-Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
+Output will be in the `dist/` directory.
 
-👉🏻 [visit documentation](https://docs.themefisher.com/constra/)
+## Adding Content
 
-<!-- reporting issue -->
-## Reporting Issues
+### Adding a New Article
 
-We use GitHub Issues as the official bug tracker for the Constra Template. Please Search [existing issues](https://github.com/themefisher/Constra-Bootstrap-Construction-Template/issues). It's possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/Constra-Bootstrap-Construction-Template/issues).
+1. Create a new Markdown file in the appropriate category folder:
+   ```
+   src/content/articles/aile-hukuku/yeni-makale.md
+   ```
 
-<!-- support -->
-## Technical Support or Questions (Paid)
+2. Add frontmatter with required metadata:
+   ```markdown
+   ---
+   title: "Makale Başlığı"
+   description: "SEO açıklaması"
+   category: "aile-hukuku"
+   categoryTitle: "Aile Hukuku"
+   date: 2024-03-31
+   layout: "layouts/article.njk"
+   permalink: "/yeni-makale/"
+   breadcrumbs:
+     - { title: "Anasayfa", url: "/" }
+     - { title: "Aile Hukuku", url: "/aile-hukuku/" }
+     - { title: "Makale Başlığı", url: "/yeni-makale/" }
+   ---
+   
+   # Makale İçeriği
+   
+   Markdown içeriğiniz buraya...
+   ```
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+3. The article will automatically appear in the category listing page.
 
-<!-- licence -->
+### Adding a New Page
+
+1. Create a Markdown file in `src/content/pages/`:
+   ```
+   src/content/pages/yeni-sayfa.md
+   ```
+
+2. Add frontmatter:
+   ```markdown
+   ---
+   title: "Sayfa Başlığı"
+   description: "Sayfa açıklaması"
+   layout: "layouts/page.njk"
+   permalink: "/yeni-sayfa/"
+   breadcrumbs:
+     - { title: "Anasayfa", url: "/" }
+     - { title: "Sayfa Başlığı", url: "/yeni-sayfa/" }
+   ---
+   
+   Sayfa içeriği...
+   ```
+
+### Updating Navigation
+
+Edit `src/_data/navigation.json` to add or modify menu items.
+
+### Updating Site Information
+
+Edit `src/_data/site.json` to update contact information, social media links, etc.
+
+## Deployment
+
+The site is configured to deploy to Netlify. The build command runs automatically on push to the main branch.
+
+### Manual Deployment
+
+1. Build the site:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy the `dist/` folder to your static hosting service.
+
+## Technology Stack
+
+- **Eleventy (11ty)** - Static site generator
+- **Nunjucks** - Template engine
+- **Markdown** - Content format
+- **Bootstrap 4.5** - CSS framework
+- **jQuery** - JavaScript library
+
+## File Naming Conventions
+
+- **Files**: kebab-case (e.g., `aile-hukuku.md`)
+- **Directories**: lowercase, hyphenated (e.g., `legal-articles/`)
+- **CSS Classes**: BEM methodology for custom components
+- **Variables**: Descriptive, prefixed (e.g., `$color-primary`)
+
+## Best Practices
+
+1. **Content**: Write content in Markdown, keep HTML out of content files
+2. **Templates**: Use Nunjucks includes for reusable components
+3. **Data**: Store configuration in JSON files in `_data/`
+4. **Images**: Place images in `src/assets/images/` organized by purpose
+5. **SEO**: Always include title, description, and breadcrumbs in frontmatter
+
+## Troubleshooting
+
+### Build Errors
+
+- Check that all template syntax is correct (Nunjucks)
+- Verify that all referenced data files exist
+- Ensure image paths are correct (use `/images/...` not `images/...`)
+
+### Content Not Appearing
+
+- Verify the frontmatter is correct (YAML syntax)
+- Check that the layout file exists
+- Ensure the permalink is unique
+
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/constra/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
-<!-- resources -->
-## Resources
-
-Some third-party plugins that we used to build this template. Please check their licenses.
-
-* **Bootstrap v4.5**: <https://getbootstrap.com/docs/4.5/getting-started/introduction/>
-* **Jquery v3.5.1**: <https://jquery.com/download/>
-* **Google Fonts**: <http://fonts.google.com/>
-* **Font Awesome Free**: <https://fontawesome.com/>
-* **Animate CSS**: <https://animate.style/>
-* **Colorbox**: <https://www.jacklmoore.com/colorbox/>
-* **Slick**: <https://kenwheeler.github.io/slick/>
-* **Shuffle**: <https://vestride.github.io/Shuffle/>
+Copyright © Ermiş & Demirer Hukuk Bürosu

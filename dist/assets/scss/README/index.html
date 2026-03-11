@@ -1,0 +1,44 @@
+<h1>SCSS Structure</h1>
+<p>This directory contains the SCSS source files for the website styles.</p>
+<h2>Structure</h2>
+<pre><code>src/assets/scss/
+├── main.scss          # Main SCSS file (compiled to dist/css/style.css)
+├── _variables.scss    # SCSS variables (for future refactoring)
+└── README.md          # This file
+</code></pre>
+<h2>Compilation</h2>
+<p>SCSS files are automatically compiled during the Eleventy build process:</p>
+<ul>
+<li><strong>Input</strong>: <code>src/assets/scss/main.scss</code></li>
+<li><strong>Output</strong>: <code>dist/css/style.css</code></li>
+<li><strong>Source Map</strong>: <code>dist/css/style.css.map</code></li>
+</ul>
+<h2>Build Process</h2>
+<p>The SCSS compilation happens in <code>.eleventy.js</code> during the <code>eleventy.before</code> hook:</p>
+<ol>
+<li>SCSS files are compiled using the <code>sass</code> package</li>
+<li>Compiled CSS is written to <code>dist/css/style.css</code></li>
+<li>Source maps are generated for debugging</li>
+</ol>
+<h2>Future Refactoring</h2>
+<p>The current <code>main.scss</code> file contains all styles in a single file (converted from the original CSS). For better maintainability, consider refactoring into partials:</p>
+<pre><code>src/assets/scss/
+├── main.scss
+├── _variables.scss
+├── _typography.scss
+├── _layout.scss
+├── _components.scss
+├── _utilities.scss
+└── ...
+</code></pre>
+<p>Then import them in <code>main.scss</code>:</p>
+<pre><code class="language-scss">@import 'variables';
+@import 'typography';
+@import 'layout';
+@import 'components';
+// etc.
+</code></pre>
+<h2>Usage</h2>
+<p>The compiled CSS is automatically included in all pages via <code>src/_includes/components/head.njk</code>:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;
+</code></pre>

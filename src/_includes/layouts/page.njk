@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  {% if breadcrumbs %}
+    {% include "components/breadcrumb.njk" %}
+  {% endif %}
+
+  <section id="main-container" class="main-container">
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </section>
+{% endblock %}

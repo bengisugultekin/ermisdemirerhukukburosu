@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "aile-hukuku",
+      "title": "Aile Hukuku",
+      "url": "/aile-hukuku/",
+      "icon": "images/icon-image/divorce.png",
+      "image": "images/services/aile.jpg",
+      "description": "Toplumun temel taşı olan Aile'yi düzenleyen Aile Hukukuna dair Nişanlanma, Boşanma, Velayet, Ziynet, Nafaka, vb. gibi tüm davalarınızda profesyonel destek veriyoruz."
+    },
+    {
+      "id": "ceza-hukuku",
+      "title": "Ceza Hukuku",
+      "url": "/ceza-hukuku/",
+      "icon": "images/icon-image/justice 2.png",
+      "image": "images/services/ceza.jpg",
+      "description": "Savunmanın kutsallığı doğrultusunda müvekkillerimizi, tarafı oldukları ceza davalarında ve soruşturmalarında etkin bir şekilde temsil ediyor ve savunma hizmeti sunuyoruz."
+    },
+    {
+      "id": "icra-hukuku",
+      "title": "İcra ve İflas Hukuku",
+      "url": "/icra-hukuku/",
+      "icon": "images/icon-image/law.png",
+      "image": "images/services/icra.jpg",
+      "description": "Alacak ve borç ilişkisinin tarafı olan alacaklıları ve borçluları, diğer tarafa karşı en iyi şekilde temsil ederek, alacaklının alacağına bir an önce kavuşturmaya ve borçlunun da tüm yasal haklarını kullanarak borcunu ödemesi için süreci en iyi şekilde yürütüyoruz."
+    },
+    {
+      "id": "ticaret-hukuku",
+      "title": "Ticaret Hukuku",
+      "url": "/ticaret-hukuku/",
+      "icon": "images/icon-image/global-economy.png",
+      "image": "images/services/ticaret.jpg",
+      "description": "Gerçek kişi ve tüzel kişi tacirlerin, ticari hayatlarının her alanında karşılaştıkları sorunların çözümünde ve sorunlarla karşılaşmamaları için önleyici hukuk kapsamında gerekli tüm desteği kesintisiz olarak uzun yıllara dayanan tecrübe ile veriyoruz."
+    },
+    {
+      "id": "is-hukuku",
+      "title": "İş Hukuku",
+      "url": "/is-hukuku/",
+      "icon": "images/icon-image/labor-law.png",
+      "image": "images/services/isci.jpg",
+      "description": "Çalışma hayatındaki her türlü uyuşmazlığa, hem işçi hem de işveren vekili olarak arabuluculuk sürecinden başlayıp süreç sonuna kadar haklarınızı en etkili şekilde koruyoruz."
+    },
+    {
+      "id": "gayrimenkul-hukuku",
+      "title": "Gayrimenkul Hukuku",
+      "url": "/gayrimenkul-hukuku/",
+      "icon": "images/icon-image/lease.png",
+      "image": "images/services/gayri.jpg",
+      "description": "Taşınmaz mal varlıklarınızdan kaynaklı başta kira hukukundan kaynaklı olmak üzere ortaklığın giderilmesi, muris muvazaasından kaynaklı tapu iptal tescil davaları olmak üzere her türlü gayrimenkul davası büromuzdaki uzman avukatlar ile titiz bir şekilde yürütülmektedir."
+    }
+  ]
+}

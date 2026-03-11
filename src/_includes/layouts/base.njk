@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  {% include "components/head.njk" %}
+</head>
+
+<body>
+
+<div class="whats-float">
+  <a href="{{ site.social.whatsapp }}" target="_blank">
+    <i class="fab fa-whatsapp"></i><span>Bize Ulaşın</span>
+  </a>
+</div>
+
+<div class="body-inner">
+  {% include "components/header.njk" %}
+
+  {% block content %}{% endblock %}
+
+  {% include "components/footer.njk" %}
+
+  {% block scripts %}
+    {% include "components/scripts.njk" %}
+  {% endblock %}
+</div>
+<!-- Body inner end -->
+</body>
+</html>
