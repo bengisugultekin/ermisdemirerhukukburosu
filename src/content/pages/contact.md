@@ -3,6 +3,7 @@ title: "İletişim"
 description: "Ermiş Hukuk Bürosu iletişim bilgileri"
 layout: "layouts/contact.njk"
 permalink: "/contact/"
+templateEngine: njk
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
   - { title: "İletişim", url: "/contact/" }
@@ -58,8 +59,29 @@ breadcrumbs:
 
 <div class="row">
   <div class="col-lg-12">
-    <div class="google-map">
-      <div id="map" style="height: 400px;"></div>
+    <div class="google-map" style="position: relative;">
+      <iframe
+        src="{{ site.contact.mapEmbedUrl }}"
+        width="100%"
+        height="400"
+        style="border:0; display: block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ermiş Hukuk Bürosu Konum"
+      ></iframe>
+      <a
+        href="{{ site.contact.mapOpenUrl }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="map-open-link"
+        style="position: absolute; bottom: 12px; right: 12px; background: #fff; padding: 8px 14px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); font-size: 14px; color: #333; text-decoration: none; display: flex; align-items: center; gap: 6px; font-weight: 500; transition: box-shadow 0.2s;"
+        onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.25)'"
+        onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.2)'"
+      >
+        <i class="fas fa-external-link-alt"></i>
+        Google Maps'te aç
+      </a>
     </div>
   </div>
 </div>

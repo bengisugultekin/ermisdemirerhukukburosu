@@ -90,13 +90,24 @@ module.exports = function(eleventyConfig) {
     if (fs.existsSync(themeImages)) {
       copyDir(themeImages, distImages);
     }
+    // Override with logos from src/assets/images (new logos take precedence)
+    const srcAssetsImages = path.join(__dirname, 'src', 'assets', 'images');
+    const logoFiles = ['logo.png', 'mini-logo.svg', 'footer-logo.png'];
+    if (fs.existsSync(srcAssetsImages)) {
+      logoFiles.forEach(file => {
+        const srcFile = path.join(srcAssetsImages, file);
+        if (fs.existsSync(srcFile)) {
+          fs.copyFileSync(srcFile, path.join(distImages, file));
+        }
+      });
+    }
   });
   
   // Images are copied in the eleventy.before hook to dist/images
   
   // Copy favicon and other root files
   eleventyConfig.addPassthroughCopy({
-    "theme/images/mini-logo.png": "images/mini-logo.png"
+    "theme/images/mini-logo.svg": "images/mini-logo.svg"
   });
 
   // Custom filters

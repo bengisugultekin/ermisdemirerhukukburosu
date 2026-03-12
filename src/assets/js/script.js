@@ -295,7 +295,7 @@ class MyFooter extends HTMLElement {
       <div class="row justify-content-between">
         <div class="col-lg-4 col-md-6 footer-widget footer-about">
           <h3 class="widget-title">HAKKIMIZDA</h3>
-          <img loading="lazy" height="40px" class="footer-logo" src="images/footer-logo.png" alt="ermishukukburosu">
+          <img loading="lazy" height="40px" class="footer-logo" src="images/mini-logo.svg" alt="ermishukukburosu">
           <p>Ermiş Hukuk Bürosu olarak; tarafı olduğunuz her hukuki ilişkide sizleri en iyi şekilde temsil ediyor ve hukuki danışmanlık veriyoruz.</p>
           <div class="footer-social">
             <ul>
@@ -383,7 +383,7 @@ class MyHeader extends HTMLElement {
             <div class="row align-items-center">
               <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                 <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="ErmisHukukBurosu">
+                  <img loading="lazy" src="images/mini-logo.svg" alt="ErmisHukukBurosu">
                 </a>
               </div><!-- logo end -->
 
