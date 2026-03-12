@@ -1,6 +1,6 @@
 ---
 title: "İletişim"
-description: "Ermiş & Demirer Hukuk Bürosu iletişim bilgileri"
+description: "Ermiş Hukuk Bürosu iletişim bilgileri"
 layout: "layouts/contact.njk"
 permalink: "/contact/"
 breadcrumbs:

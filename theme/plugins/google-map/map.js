@@ -28,11 +28,11 @@ function initMap() {
       const marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
         position: officeLocation,
-        title: 'Ermiş & Demirer Hukuk Bürosu'
+        title: 'Ermiş Hukuk Bürosu'
       });
 
       const infoWindow = new google.maps.InfoWindow({
-        content: '<div style="padding: 10px;"><strong>Ermiş & Demirer Hukuk Bürosu</strong><br>Mansuroğlu, 1593/1. Sk, Lider Centrio, No: 4 B blok D: 62, Bayraklı/İzmir</div>'
+        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 SK, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
       });
 
       // AdvancedMarkerElement uses addEventListener with 'gmp-click' event
@@ -49,11 +49,11 @@ function initMap() {
       const marker = new google.maps.Marker({
         position: officeLocation,
         map: map,
-        title: 'Ermiş & Demirer Hukuk Bürosu'
+        title: 'Ermiş Hukuk Bürosu'
       });
 
       const infoWindow = new google.maps.InfoWindow({
-        content: '<div style="padding: 10px;"><strong>Ermiş & Demirer Hukuk Bürosu</strong><br>Mansuroğlu, 1593/1. Sk, Lider Centrio, No: 4 B blok D: 62, Bayraklı/İzmir</div>'
+        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 SK, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
       });
 
       marker.addListener('click', () => {

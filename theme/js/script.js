@@ -295,18 +295,17 @@ class MyFooter extends HTMLElement {
       <div class="row justify-content-between">
         <div class="col-lg-4 col-md-6 footer-widget footer-about">
           <h3 class="widget-title">HAKKIMIZDA</h3>
-          <img loading="lazy" height="40px" class="footer-logo" src="images/footer-logo.png" alt="ermisdemirerhukuk">
-          <p>Ermiş & Demirer Hukuk Bürosu olarak; tarafı olduğunuz her hukuki ilişkide sizleri en iyi şekilde temsil ediyor ve hukuki danışmanlık veriyoruz.</p>
+          <img loading="lazy" height="40px" class="footer-logo" src="images/footer-logo.png" alt="ermishukukburosu">
+          <p>Ermiş Hukuk Bürosu olarak; tarafı olduğunuz her hukuki ilişkide sizleri en iyi şekilde temsil ediyor ve hukuki danışmanlık veriyoruz.</p>
           <div class="footer-social">
             <ul>
-              <li><a href="https://wa.me/905324102112" aria-label="Whatsapp"><i
+              <li><a href="https://wa.me/905553499588" aria-label="Whatsapp"><i
                 class="fab fa-whatsapp"></i></a></li>
 <!--              <li><a href="https://telegram.com/themefisher" aria-label="Telegram"><i class="fab fa-telegram"></i></a>-->
 <!--              </li>-->
-              <li><a href="https://www.instagram.com/ermisdemirerhukukburosu/" aria-label="Instagram"><i
+              <li><a href="https://www.instagram.com/ermishukukburosu/" aria-label="Instagram"><i
                 class="fab fa-instagram"></i></a></li>
               <li><a href="https://www.linkedin.com/in/necat-ermi%C5%9F-305807109" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/r%C4%B1dvan-demirer-747b0616b" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div><!-- Footer social end -->
         </div><!-- Col end -->
@@ -342,7 +341,7 @@ class MyFooter extends HTMLElement {
           <div class="copyright-info">
             <span>Copyright &copy; <script>
                 document.write(new Date().getFullYear())
-              </script>, Ermiş & Demirer Hukuk Bürosu</a></span>
+              </script>, Ermiş Hukuk Bürosu</a></span>
           </div>
         </div>
 
@@ -384,7 +383,7 @@ class MyHeader extends HTMLElement {
             <div class="row align-items-center">
               <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                 <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="Ermis&Demirer">
+                  <img loading="lazy" src="images/logo.png" alt="ErmisHukukBurosu">
                 </a>
               </div><!-- logo end -->
 
@@ -394,7 +393,7 @@ class MyHeader extends HTMLElement {
                   <div class="info-box">
                     <div class="info-box-content">
                       <p class="info-box-title">Bizi Arayın</p>
-                      <p class="info-box-subtitle">(0532) 410 21 12</p>
+                      <p class="info-box-subtitle">(0555) 349 95 88</p>
                     </div>
                   </div>
                 </li>
@@ -410,7 +409,7 @@ class MyHeader extends HTMLElement {
                   <div class="info-box last">
                     <div class="info-box-content">
                       <p class="info-box-title">Mail Adresimiz</p>
-                      <p class="info-box-subtitle">info@ermisdemirerhukuk.av.tr</p>
+                      <p class="info-box-subtitle">ermishukukburosu@gmail.com</p>
                     </div>
                   </div>
                 </li>
@@ -490,7 +489,7 @@ class TopBar extends HTMLElement {
           <div class="col-lg-8 col-md-8">
             <ul class="top-info text-center text-md-left">
               <li><i class="fas fa-map-marker-alt"></i>
-                <p class="info-text">Lider Centrio B Blok, Bayraklı</p>
+                <p class="info-text">Mertoğlu İş Merkezi, Karşıyaka</p>
               </li>
             </ul>
           </div>
@@ -499,13 +498,13 @@ class TopBar extends HTMLElement {
         <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
           <ul class="list-unstyled">
             <li>
-              <a title="Whatsapp" href="https://wa.me/905324102112">
+              <a title="Whatsapp" href="https://wa.me/905553499588">
                 <span class="social-icon"><i class="fab fa-whatsapp"></i></span>
               </a>
               <!-- <a title="Telegram" href="https://telegram.com/themefisher.com">
                 <span class="social-icon"><i class="fab fa-telegram"></i></span>
             </a> -->
-              <a title="Instagram" href="https://www.instagram.com/ermisdemirerhukukburosu/">
+              <a title="Instagram" href="https://www.instagram.com/ermishukukburosu/">
                 <span class="social-icon"><i class="fab fa-instagram"></i></span>
               </a>
               <!-- <a title="Linkedin" href="https://www.linkedin.com/in/necat-ermi%C5%9F-305807109">

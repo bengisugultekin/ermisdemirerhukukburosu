@@ -1,11 +1,11 @@
-# Ermiş & Demirer Hukuk Bürosu Website
+# Ermiş Hukuk Bürosu Website
 
 Modern, maintainable static website built with Eleventy (11ty), Nunjucks templates, and Markdown content.
 
 ## Project Structure
 
 ```
-ermisdemirerhukukburosu/
+ermishukukburosuburosu/
 ├── src/                          # Source files
 │   ├── _data/                    # Global data files (JSON)
 │   │   ├── site.json            # Site metadata, contact info
@@ -175,4 +175,4 @@ The site is configured to deploy to Netlify. The build command runs automaticall
 
 ## License
 
-Copyright © Ermiş & Demirer Hukuk Bürosu
+Copyright © Ermiş Hukuk Bürosu
