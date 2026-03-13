@@ -126,11 +126,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://ermishukukburosu.av.tr/services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -174,5 +169,10 @@
     <loc>https://ermishukukburosu.av.tr/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>

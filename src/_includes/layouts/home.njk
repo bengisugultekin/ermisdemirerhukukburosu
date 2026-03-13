@@ -56,7 +56,7 @@
     "is-hukuku": { "webp": "/images/services/isci.webp", "jpg": "/images/services/isci.jpg", "alt": "İş Hukuku" },
     "ticaret-hukuku": { "webp": "/images/services/ticaret.webp", "jpg": "/images/services/ticaret.jpg", "alt": "Ticaret Hukuku" },
     "tuketici-hukuku": { "webp": "/images/slider-main/book.webp", "jpg": "/images/slider-main/book.jpg", "alt": "Tüketici Hukuku" },
-    "dava-turleri": { "webp": "/images/slider-main/book.webp", "jpg": "/images/slider-main/book.jpg", "alt": "Dava Türleri" }
+    "dava-turleri": { "webp": "/images/slider-main/lawyer.webp", "jpg": "/images/slider-main/lawyer.jpg", "alt": "Dava Türleri" }
   } %}
 
   <section class="articles section" id="makaleler" aria-labelledby="makaleler-title">
@@ -77,28 +77,139 @@
 
       <div class="articles__grid">
         {% set displayCount = 0 %}
-        {% for article in collections.articles | shuffle %}
-          {% if displayCount < 8 %}
-          {% set displayCount = displayCount + 1 %}
-          {% set img = categoryImages[article.data.category] %}
-          <article class="articles__article card" data-category="{{ article.data.category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
-            <div class="card__image-wrapper">
-              <picture>
-                <source srcset="{{ img.webp }}" type="image/webp">
-                <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
-              </picture>
-              <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
-            </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                <a href="{{ article.url }}">{{ article.data.title }}</a>
-              </h3>
-              <p class="card__meta">
-                <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
-                <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
-              </p>
-            </div>
-          </article>
+        
+        {# Aile Hukuku - 2 makale #}
+        {% for article in collections["aile-hukuku"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Ceza Hukuku - 1 makale #}
+        {% for article in collections["ceza-hukuku"] %}
+          {% if loop.index <= 1 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# İcra Hukuku - 1 makale #}
+        {% for article in collections["icra-hukuku"] %}
+          {% if loop.index <= 1 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Tüketici Hukuku - 2 makale #}
+        {% for article in collections["tuketici-hukuku"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Dava Türleri - 2 makale #}
+        {% for article in collections["dava-turleri"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
           {% endif %}
         {% endfor %}
       </div>
@@ -126,12 +237,7 @@
           </div>
           <p>Alanında uzman kadrosu ile müvekkillerine en iyi şekilde uzun yıllardır hizmet vermektedir. Kaliteli ve etkin avukatlık hizmeti vermemiz beraberinde birçok kurumsal ve bireysel müvekkil ile çalışma imkanı sunmuştur.</p>
           <p>Siz değerli müvekkil ve danışanlarımıza, hakkınızın tescil veya müdafaasında yürütülecek hukuki süreci şeffaf olarak anlatıyoruz. Duymak istediklerinizi değil duymanız gerekenleri söyleyerek, etkin ve güvenilir bir vekalet ilişkisi ile hukuki destek sunuyoruz.</p>
-          <div class="about__values">
-            <span class="about__value">Güvenilir</span>
-            <span class="about__value">Etik</span>
-            <span class="about__value">Dürüstlük</span>
-            <span class="about__value">Şeffaflık</span>
-          </div>
+        
         </div>
       </div>
     </div>
