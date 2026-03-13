@@ -74,10 +74,20 @@ module.exports = function(eleventyConfig) {
     return words.slice(0, count).join(' ') + '...';
   });
 
+  eleventyConfig.addFilter("shuffle", (array) => {
+    if (!Array.isArray(array)) return array;
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  });
+
   // Collections
   eleventyConfig.addCollection("articles", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/content/articles/**/*.md").filter(item => {
-      return !item.data.draft && item.fileSlug !== "index";
+      return !item.data.draft && item.data.layout === "layouts/article.njk";
     }).sort((a, b) => (b.date || 0) - (a.date || 0));
   });
 
