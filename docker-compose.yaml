@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: m80804k0gg08sccsgkks4c4o:${SOURCE_COMMIT}
+    container_name: ${COOLIFY_CONTAINER_NAME}
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
