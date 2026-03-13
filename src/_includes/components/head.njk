@@ -1,40 +1,41 @@
-<!-- Basic Page Needs -->
 <meta charset="utf-8">
 <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-{% if site.googleSiteVerification %}
-<meta name="google-site-verification" content="{{ site.googleSiteVerification }}" />
-{% endif %}
-
-<!-- Mobile Specific Metas -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% if site.googleSiteVerification %}
+<meta name="google-site-verification" content="{{ site.googleSiteVerification }}">
+{% endif %}
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/images/mini-logo.png">
 
-<!-- CSS -->
-<!-- Bootstrap -->
-<link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
-<!-- FontAwesome -->
-<link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
-<!-- Animation -->
-<link rel="stylesheet" href="/plugins/animate-css/animate.css">
-<!-- slick Carousel -->
-<link rel="stylesheet" href="/plugins/slick/slick.css">
-<link rel="stylesheet" href="/plugins/slick/slick-theme.css">
-<!-- Colorbox -->
-<link rel="stylesheet" href="/plugins/colorbox/colorbox.css">
-<!-- Template styles-->
+<!-- Fonts (async) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap">
+</noscript>
+
+<!-- Stylesheet -->
 <link rel="stylesheet" href="/css/style.css">
 
-<!-- Open Graph / Facebook -->
-{% if title %}
-<meta property="og:type" content="website">
+<!-- Open Graph -->
+<meta property="og:type" content="{% if layout == 'layouts/article.njk' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
 <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
-{% endif %}
+<meta property="og:locale" content="tr_TR">
 
-<!-- Canonical URL -->
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Canonical & Language -->
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="tr" href="{{ site.url }}{{ page.url }}">
+
+{% include "components/structured-data.njk" %}

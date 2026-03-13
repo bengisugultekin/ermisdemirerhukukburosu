@@ -1,0 +1,86 @@
+// ==============================================
+// Lawyers Section
+// ==============================================
+
+.lawyers {
+  background: $gray-100;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-xl;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+    padding: $space-xl $space-md;
+    background: $white;
+    border-radius: $radius-md;
+    box-shadow: $shadow-sm;
+    transition: box-shadow $transition-base;
+
+    &:hover {
+      box-shadow: $shadow-md;
+    }
+  }
+
+  &__photo {
+    width: 180px;
+    height: 180px;
+    border-radius: $radius-full;
+    object-fit: cover;
+    margin: 0 auto $space-md;
+    border: 3px solid $gold;
+  }
+
+  &__name {
+    font-family: $font-heading;
+    font-size: $text-2xl;
+    font-weight: 600;
+    color: $charcoal;
+    margin-bottom: $space-xs;
+  }
+
+  &__title {
+    font-size: $text-sm;
+    font-weight: 600;
+    color: $gold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: $space-sm;
+  }
+
+  &__bio {
+    font-size: $text-sm;
+    color: $gray-600;
+    line-height: 1.6;
+    margin-bottom: $space-md;
+  }
+
+  &__social {
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      color: $gold;
+      border: 1px solid $gray-300;
+      border-radius: $radius-full;
+      transition: all $transition-fast;
+
+      &:hover {
+        background: $gold;
+        border-color: $gold;
+        color: $white;
+      }
+    }
+  }
+}

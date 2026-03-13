@@ -1,0 +1,84 @@
+// ==============================================
+// Cards
+// ==============================================
+
+.card {
+  background: $white;
+  border-radius: $radius-md;
+  overflow: hidden;
+  transition: box-shadow $transition-base, transform $transition-base;
+  box-shadow: $shadow-sm;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  &__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    @media (max-width: $bp-md) {
+      height: 180px;
+    }
+  }
+
+  &__body {
+    padding: $space-md;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: $text-xs;
+    font-weight: 600;
+    color: $gold-dark;
+    background: $gold-muted;
+    border-radius: 100px;
+    margin-bottom: $space-xs;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $text-xl;
+    font-weight: 600;
+    color: $charcoal;
+    margin-bottom: $space-xs;
+    line-height: 1.4;
+
+    a {
+      color: $charcoal;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+
+  &__text {
+    font-size: $text-sm;
+    color: $gray-600;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: $space-sm;
+  }
+
+  &__meta {
+    font-size: $text-xs;
+    color: $gray-600;
+    margin-bottom: $space-xs;
+  }
+
+  // Service card variant with gold left border on hover
+  &--service {
+    border-left: 4px solid transparent;
+
+    &:hover {
+      border-left-color: $gold;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// ==============================================
+// Breadcrumb
+// ==============================================
+
+.breadcrumb-section {
+  background: $black;
+  padding: calc($header-height + $space-xl) 0 $space-xl;
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $text-4xl;
+    color: $white;
+    margin-bottom: $space-sm;
+
+    @media (max-width: $bp-md) {
+      font-size: $text-2xl;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    font-size: $text-sm;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: $space-xs;
+      color: $gray-300;
+
+      &::after {
+        content: '/';
+        color: $gray-600;
+        margin-left: $space-xs;
+      }
+
+      &:last-child {
+        color: $gold;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      a {
+        color: $gray-300;
+
+        &:hover {
+          color: $gold;
+        }
+      }
+    }
+  }
+}

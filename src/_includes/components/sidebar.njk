@@ -1,10 +1,12 @@
-<div class="widget">
-  <h3 class="widget-title">KATEGORİLER</h3>
-  <ul class="arrow nav nav-tabs">
-    {% for service in services.categories %}
-    <li><a href="{{ service.url }}">{{ service.title }}</a></li>
-    {% endfor %}
-    <li><a href="/tuketici-hukuku/">Tüketici Hukuku</a></li>
-    <li><a href="/dava-turleri/">Dava Türleri</a></li>
-  </ul>
-</div>
+<aside class="sidebar">
+  <div class="sidebar__widget">
+    <h3 class="sidebar__title">Kategoriler</h3>
+    <ul class="sidebar__list">
+      {% for service in services.categories %}
+      <li><a href="{{ service.url }}">{{ service.title }}</a></li>
+      {% endfor %}
+      <li><a href="/tuketici-hukuku/">Tüketici Hukuku</a></li>
+      <li><a href="/dava-turleri/">Dava Türleri</a></li>
+    </ul>
+  </div>
+</aside>

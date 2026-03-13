@@ -1,0 +1,18 @@
+{
+  "team": [
+    {
+      "name": "Av. Necat Ermiş",
+      "title": "Kurucu Avukat",
+      "image": "/images/team/necat.jpeg",
+      "bio": "Uzun yılların tecrübesine sahip, alanında uzman avukat. Ermiş Hukuk Bürosu'nun kurucu ortağı olarak müvekkillerine güvenilir ve etkin hukuki danışmanlık sunmaktadır.",
+      "linkedin": "https://www.linkedin.com/in/necat-ermi%C5%9F-305807109"
+    },
+    {
+      "name": "Av. Öykü Ermiş",
+      "title": "Avukat",
+      "image": "/images/team/oyku.jpeg",
+      "bio": "Genç ve dinamik kadronun temsilcisi olarak, hukuki süreçlerde müvekkillerine profesyonel ve etkin destek sağlamaktadır.",
+      "linkedin": ""
+    }
+  ]
+}

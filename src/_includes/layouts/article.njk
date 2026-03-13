@@ -3,47 +3,36 @@
 {% block content %}
   {% include "components/breadcrumb.njk" %}
 
-  <section id="main-container" class="main-container">
+  <section class="article-page">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mb-5 mb-lg-0">
-          <div class="post-content post-single">
-            <div class="post-body">
-              <div class="entry-header">
-                <div class="post-meta">
-                  {% if category %}
-                  <span class="post-cat">
-                    <i class="far fa-folder-open"></i><a href="/{{ category }}/"> {{ categoryTitle }}</a>
-                  </span>
-                  {% endif %}
-                  {% if date %}
-                  <span class="post-comment"><i class="far fa-calendar"></i> {{ date | formatDate }}</span>
-                  {% endif %}
-                </div>
-                <h2 class="entry-title">{{ title }}</h2>
-              </div>
-              <!-- header end -->
-              <div class="entry-content">
-                {{ content | safe }}
-              </div>
-            </div>
-            <!-- post-body end -->
-          </div>
-          <!-- post content end -->
-        </div>
-        <!-- Content Col end -->
+      <div class="article-page__layout">
 
-        <div class="col-lg-4">
-          <div class="sidebar sidebar-right">
-            {% include "components/sidebar.njk" %}
+        <article class="article-page__main">
+          <div class="article-page__meta">
+            {% if category %}
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <a href="/{{ category }}/">{{ categoryTitle }}</a>
+            </span>
+            {% endif %}
+            {% if date %}
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              {{ date | formatDate }}
+            </span>
+            {% endif %}
           </div>
-          <!-- Sidebar end -->
-        </div>
-        <!-- Sidebar Col end -->
+
+          <h2 class="article-page__title">{{ title }}</h2>
+
+          <div class="article-page__content">
+            {{ content | safe }}
+          </div>
+        </article>
+
+        {% include "components/sidebar.njk" %}
+
       </div>
-      <!-- Main row end -->
     </div>
-    <!-- Container end -->
   </section>
-  <!-- Main container end -->
 {% endblock %}

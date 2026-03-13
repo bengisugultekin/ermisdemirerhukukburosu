@@ -1,0 +1,123 @@
+// ==============================================
+// Contact Section
+// ==============================================
+
+.contact {
+  background: $white;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-xl;
+    align-items: start;
+
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-sm;
+    padding: $space-md;
+    background: $gray-100;
+    border-radius: $radius-md;
+
+    &-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $gold-muted;
+      border-radius: $radius-full;
+      color: $gold;
+      font-size: $text-lg;
+    }
+
+    &-content {
+      h4 {
+        font-size: $text-sm;
+        font-weight: 600;
+        color: $charcoal;
+        margin-bottom: 0.25rem;
+      }
+
+      p, a {
+        font-size: $text-sm;
+        color: $gray-600;
+        margin-bottom: 0;
+      }
+
+      a:hover {
+        color: $gold;
+      }
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 400px;
+    border-radius: $radius-md;
+    overflow: hidden;
+    background: $gray-100;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: $bp-md) {
+      height: 300px;
+    }
+  }
+}
+
+// Full-width CTA bar
+.cta-bar {
+  background: $gold;
+  padding: $space-xl 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-lg;
+
+    @media (max-width: $bp-md) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-family: $font-heading;
+    font-size: $text-2xl;
+    font-weight: 600;
+    color: $black;
+
+    @media (max-width: $bp-md) {
+      font-size: $text-xl;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: $space-sm;
+    flex-shrink: 0;
+
+    @media (max-width: $bp-sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
