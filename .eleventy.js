@@ -82,12 +82,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // Category collections
-  const categories = ["aile-hukuku", "ceza-hukuku", "icra-hukuku", "tuketici-hukuku", "dava-turleri", "ticaret-hukuku", "is-hukuku", "gayrimenkul-hukuku"];
+  const categories = ["aile-hukuku", "ceza-hukuku", "icra-hukuku", "tuketici-hukuku", "dava-turleri", "ticaret-hukuku", "is-hukuku", "gayrimenkul-hukuku", "kurumsal-hukuk", "vergi-hukuku"];
 
   categories.forEach(category => {
     eleventyConfig.addCollection(category, function(collectionApi) {
       return collectionApi.getFilteredByGlob(`src/content/articles/${category}/*.md`).filter(item => {
-        return !item.data.draft && item.fileSlug !== "index";
+        return !item.data.draft && item.data.layout === "layouts/article.njk";
       }).sort((a, b) => (b.date || 0) - (a.date || 0));
     });
   });
