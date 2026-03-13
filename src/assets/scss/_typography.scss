@@ -62,11 +62,11 @@ p {
 
 // Links
 a {
-  color: $gold;
+  color: $accent;
   transition: color $transition-fast;
 
   &:hover {
-    color: $gold-dark;
+    color: $accent-dark;
   }
 }
 
@@ -76,14 +76,14 @@ small, .text-small {
   color: $gray-600;
 }
 
-// Section label (gold uppercase)
+// Section label (accent uppercase)
 .section-label {
   font-family: $font-body;
   font-size: $text-sm;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $gold;
+  color: $accent;
   margin-bottom: $space-sm;
 }
 
@@ -101,7 +101,7 @@ small, .text-small {
     display: block;
     width: 60px;
     height: 3px;
-    background: $gold;
+    background: $accent;
     margin: $space-sm auto 0;
   }
 }
@@ -114,10 +114,10 @@ strong {
 
 // Blockquote
 blockquote {
-  border-left: 4px solid $gold;
+  border-left: 4px solid $accent;
   padding: $space-sm $space-md;
   margin: $space-lg 0;
-  background: $gold-muted;
+  background: $accent-muted;
   font-style: italic;
 
   p {

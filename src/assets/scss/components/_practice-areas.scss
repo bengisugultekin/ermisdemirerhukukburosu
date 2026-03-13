@@ -24,7 +24,7 @@
     transition: border-color $transition-base, box-shadow $transition-base, transform $transition-base;
 
     &:hover {
-      border-left-color: $gold;
+      border-left-color: $accent;
     }
 
     &__icon {

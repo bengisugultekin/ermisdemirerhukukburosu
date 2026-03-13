@@ -10,8 +10,8 @@
   box-shadow: $shadow-sm;
 
   &:hover {
-    box-shadow: $shadow-md;
-    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+    transform: translateY(-6px);
   }
 
   &__image {
@@ -33,8 +33,8 @@
     padding: 0.25rem 0.75rem;
     font-size: $text-xs;
     font-weight: 600;
-    color: $gold-dark;
-    background: $gold-muted;
+    color: $accent-dark;
+    background: $accent-muted;
     border-radius: 100px;
     margin-bottom: $space-xs;
   }
@@ -51,7 +51,7 @@
       color: $charcoal;
 
       &:hover {
-        color: $gold;
+        color: $accent;
       }
     }
   }
@@ -73,12 +73,13 @@
     margin-bottom: $space-xs;
   }
 
-  // Service card variant with gold left border on hover
+  // Service card variant with accent left border on hover
   &--service {
     border-left: 4px solid transparent;
+    transition: box-shadow $transition-base, transform $transition-base, border-left-color $transition-base;
 
     &:hover {
-      border-left-color: $gold;
+      border-left-color: $accent;
     }
   }
 }

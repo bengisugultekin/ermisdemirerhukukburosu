@@ -28,6 +28,9 @@
 
   &__logo {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: $space-md;
 
     img {
       height: 45px;
@@ -36,6 +39,20 @@
       @media (max-width: $bp-md) {
         height: 36px;
       }
+    }
+  }
+
+  &__logo-text {
+    font-family: $font-body;
+    font-size: 20px;
+    font-weight: 700;
+    color: #D4AF37;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    line-height: 1.2;
+
+    @media (max-width: $bp-md) {
+      display: none;
     }
   }
 
@@ -66,13 +83,13 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: $gold;
+      background: $accent;
       transition: width $transition-base;
     }
 
     &:hover,
     &.is-active {
-      color: $gold;
+      color: $accent;
 
       &::after {
         width: 100%;
@@ -80,31 +97,6 @@
     }
   }
 
-  &__cta {
-    display: flex;
-    align-items: center;
-    gap: $space-sm;
-
-    @media (max-width: $bp-lg) {
-      display: none;
-    }
-  }
-
-  &__phone {
-    display: flex;
-    align-items: center;
-    gap: $space-xs;
-    color: $white;
-    font-size: $text-sm;
-    font-weight: 500;
-    white-space: nowrap;
-
-    svg {
-      width: 16px;
-      height: 16px;
-      color: $gold;
-    }
-  }
 
   // Mobile hamburger
   &__toggle {
@@ -170,7 +162,7 @@
     transition: color $transition-fast;
 
     &:hover {
-      color: $gold;
+      color: $accent;
     }
   }
 
@@ -180,7 +172,7 @@
 
     a {
       display: block;
-      color: $gold;
+      color: $accent;
       font-size: $text-lg;
       margin-bottom: $space-sm;
     }

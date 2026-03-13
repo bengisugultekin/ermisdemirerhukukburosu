@@ -37,9 +37,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: $gold-muted;
+      background: $accent-muted;
       border-radius: $radius-full;
-      color: $gold;
+      color: $accent;
       font-size: $text-lg;
     }
 
@@ -58,7 +58,7 @@
       }
 
       a:hover {
-        color: $gold;
+        color: $accent;
       }
     }
   }
@@ -84,7 +84,7 @@
 
 // Full-width CTA bar
 .cta-bar {
-  background: $gold;
+  background: $accent;
   padding: $space-xl 0;
 
   &__inner {
@@ -103,7 +103,7 @@
     font-family: $font-heading;
     font-size: $text-2xl;
     font-weight: 600;
-    color: $black;
+    color: $white;
 
     @media (max-width: $bp-md) {
       font-size: $text-xl;

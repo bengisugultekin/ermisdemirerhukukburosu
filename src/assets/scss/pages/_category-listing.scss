@@ -30,7 +30,7 @@
     transition: border-color $transition-base, box-shadow $transition-base;
 
     &:hover {
-      border-left-color: $gold;
+      border-left-color: $accent;
       box-shadow: $shadow-md;
     }
   }
@@ -51,7 +51,7 @@
       color: $charcoal;
 
       &:hover {
-        color: $gold;
+        color: $accent;
       }
     }
   }

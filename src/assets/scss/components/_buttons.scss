@@ -21,25 +21,43 @@
   white-space: nowrap;
 
   &--primary {
-    background: $gold;
-    color: $black;
-    border-color: $gold;
+    background: $accent;
+    color: $white;
+    border-color: $accent;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: rgba($white, 0.18);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
 
     &:hover {
-      background: $gold-dark;
-      border-color: $gold-dark;
+      background: $accent-dark;
+      border-color: $accent-dark;
       color: $white;
+
+      &::after {
+        left: 125%;
+      }
     }
   }
 
   &--outline {
     background: transparent;
-    color: $gold;
-    border-color: $gold;
+    color: $accent;
+    border-color: $accent;
 
     &:hover {
-      background: $gold;
-      color: $black;
+      background: $accent;
+      color: $white;
     }
   }
 
@@ -83,7 +101,7 @@
   gap: 0.5rem;
   font-size: $text-sm;
   font-weight: 500;
-  color: $gold;
+  color: $accent;
   transition: gap $transition-fast, color $transition-fast;
 
   &::after {
@@ -92,7 +110,7 @@
   }
 
   &:hover {
-    color: $gold-dark;
+    color: $accent-dark;
     gap: 0.75rem;
   }
 }

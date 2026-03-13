@@ -28,10 +28,10 @@
     color: $gray-600;
 
     a {
-      color: $gold;
+      color: $accent;
 
       &:hover {
-        color: $gold-dark;
+        color: $accent-dark;
       }
     }
 
@@ -96,13 +96,13 @@
     }
 
     a {
-      color: $gold;
+      color: $accent;
       text-decoration: underline;
-      text-decoration-color: rgba($gold, 0.3);
+      text-decoration-color: rgba($accent, 0.3);
       text-underline-offset: 2px;
 
       &:hover {
-        text-decoration-color: $gold;
+        text-decoration-color: $accent;
       }
     }
   }
@@ -129,7 +129,7 @@
     color: $charcoal;
     padding-bottom: $space-sm;
     margin-bottom: $space-sm;
-    border-bottom: 2px solid $gold;
+    border-bottom: 2px solid $accent;
   }
 
   &__list {
@@ -149,12 +149,12 @@
 
       &::before {
         content: '›';
-        color: $gold;
+        color: $accent;
         font-weight: 700;
       }
 
       &:hover {
-        color: $gold;
+        color: $accent;
       }
     }
 

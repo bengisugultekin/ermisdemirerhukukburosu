@@ -20,11 +20,13 @@
     font-weight: 600;
     box-shadow: $shadow-lg;
     transition: transform $transition-fast, box-shadow $transition-fast;
+    animation: pulseRing 2.5s infinite;
 
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
       color: $white;
+      animation: none;
     }
 
     svg {

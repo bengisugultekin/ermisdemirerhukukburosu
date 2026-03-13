@@ -3,10 +3,10 @@
 // ==============================================
 
 // Brand Colors
-$gold: #C8A45C;
-$gold-light: #D4B97A;
-$gold-dark: #A8873A;
-$gold-muted: rgba(200, 164, 92, 0.1);
+$accent: #8B3A3A;
+$accent-light: #A85050;
+$accent-dark: #6B2C3E;
+$accent-muted: rgba(139, 58, 58, 0.1);
 
 // Neutrals
 $black: #0A0A0A;
@@ -20,8 +20,8 @@ $white: #FFFFFF;
 $bg-page: #FAF9F6;
 
 // Typography
-$font-heading: 'Playfair Display', Georgia, serif;
-$font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Type Scale
 $text-xs: 0.75rem;    // 12px

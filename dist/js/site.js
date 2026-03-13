@@ -157,4 +157,31 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  // --- Scroll Animations ---
+  const animEls = document.querySelectorAll('[data-animate]');
+  if (animEls.length > 0) {
+    const animObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            animObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    animEls.forEach(el => animObserver.observe(el));
+  }
+
+  // --- Hero Parallax ---
+  const heroBgImg = document.querySelector('.hero__bg img');
+  if (heroBgImg) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < window.innerHeight) {
+        heroBgImg.style.transform = `translateY(${window.scrollY * 0.25}px)`;
+      }
+    }, { passive: true });
+  }
+
 })();

@@ -37,7 +37,7 @@
     border-radius: $radius-full;
     object-fit: cover;
     margin: 0 auto $space-md;
-    border: 3px solid $gold;
+    border: 3px solid $accent;
   }
 
   &__name {
@@ -51,7 +51,7 @@
   &__title {
     font-size: $text-sm;
     font-weight: 600;
-    color: $gold;
+    color: $accent;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: $space-sm;
@@ -71,14 +71,14 @@
       justify-content: center;
       width: 36px;
       height: 36px;
-      color: $gold;
+      color: $accent;
       border: 1px solid $gray-300;
       border-radius: $radius-full;
       transition: all $transition-fast;
 
       &:hover {
-        background: $gold;
-        border-color: $gold;
+        background: $accent;
+        border-color: $accent;
         color: $white;
       }
     }
