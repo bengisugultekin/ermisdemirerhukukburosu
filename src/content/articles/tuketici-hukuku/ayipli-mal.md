@@ -3,7 +3,7 @@ title: "Ayıplı Mal"
 description: "Ayıplı mal nedir, ayıp çeşitleri, sözleşmeye aykırı ifa ve ayıplı malın ihbar süresi"
 category: "tuketici-hukuku"
 categoryTitle: "Tüketici Hukuku"
-date: 2024-04-01
+date: 2025-03-08
 layout: "layouts/article.njk"
 permalink: "/ayipli-mal/"
 breadcrumbs:

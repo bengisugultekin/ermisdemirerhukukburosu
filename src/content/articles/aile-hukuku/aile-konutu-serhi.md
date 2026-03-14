@@ -3,7 +3,7 @@ title: "Aile Konutu Şerhi"
 description: "Aile konutu şerhi nedir, nasıl alınır ve yararları nelerdir? Aile konutu koruması hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-06-17
 layout: "layouts/article.njk"
 permalink: "/aile-konutu-serhi/"
 breadcrumbs:

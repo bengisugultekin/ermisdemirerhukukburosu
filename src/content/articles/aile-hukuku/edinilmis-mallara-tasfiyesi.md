@@ -3,7 +3,7 @@ title: "Edinilmiş Mallara Katılma Rejiminin Tasfiyesi"
 description: "Edinilmiş mallara katılma rejiminin tasfiyesi, payların hesaplanması ve katılma alacağı hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-06-14
 layout: "layouts/article.njk"
 permalink: "/edinilmis-mallara-tasfiyesi/"
 breadcrumbs:

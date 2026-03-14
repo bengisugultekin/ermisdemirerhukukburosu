@@ -1,17 +1,71 @@
-// Variables
-// ==================================================
+// ==============================================
+// Design Tokens — Ermiş Hukuk Bürosu
+// ==============================================
 
-// Colors
-$primary-color: #212121;
-$text-color: #555;
-$background-color: #fff;
+// Brand Colors
+$accent: #8B3A3A;
+$accent-light: #A85050;
+$accent-dark: #6B2C3E;
+$accent-muted: rgba(139, 58, 58, 0.1);
+
+// Neutrals
+$black: #0A0A0A;
+$black-soft: #1A1A1A;
+$charcoal: #2D2D2D;
+$gray-900: #333333;
+$gray-600: #6B6B6B;
+$gray-300: #D1D1D1;
+$gray-100: #F5F5F3;
+$white: #FFFFFF;
+$bg-page: #FAF9F6;
 
 // Typography
-$font-family-primary: "Montserrat", sans-serif;
-$font-family-body: "Open Sans", sans-serif;
+$font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-// Breakpoints (if needed for future refactoring)
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+// Type Scale
+$text-xs: 0.75rem;    // 12px
+$text-sm: 0.875rem;   // 14px
+$text-base: 1rem;     // 16px
+$text-lg: 1.125rem;   // 18px
+$text-xl: 1.25rem;    // 20px
+$text-2xl: 1.5rem;    // 24px
+$text-3xl: 2rem;      // 32px
+$text-4xl: 2.25rem;   // 36px
+$text-5xl: 3rem;      // 48px
+
+// Spacing
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+$space-2xl: 4rem;
+$space-3xl: 6rem;
+$space-4xl: 8rem;
+
+// Layout
+$container-max: 1200px;
+$container-padding: 1.5rem;
+$header-height: 80px;
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+// Border radius
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius-lg: 6px;
+$radius-full: 50%;

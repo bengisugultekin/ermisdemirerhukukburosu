@@ -3,26 +3,23 @@
 <head>
   {% include "components/head.njk" %}
 </head>
-
 <body>
 
-<div class="whats-float">
-  <a href="{{ site.social.whatsapp }}" target="_blank">
-    <i class="fab fa-whatsapp"></i><span>Bize Ulaşın</span>
-  </a>
-</div>
+{% include "components/header.njk" %}
 
-<div class="body-inner">
-  {% include "components/header.njk" %}
-
+<main>
   {% block content %}{% endblock %}
+</main>
 
-  {% include "components/footer.njk" %}
+{% include "components/footer.njk" %}
 
-  {% block scripts %}
-    {% include "components/scripts.njk" %}
-  {% endblock %}
+<div class="back-to-top" id="backToTop" aria-label="Sayfa başına dön">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </div>
-<!-- Body inner end -->
+
+{% block scripts %}
+  {% include "components/scripts.njk" %}
+{% endblock %}
+
 </body>
 </html>

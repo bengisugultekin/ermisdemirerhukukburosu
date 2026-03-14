@@ -3,7 +3,7 @@ title: "Ziynet Eşyalarının İadesi Davası"
 description: "Banka yasal takip sürecinde faiz oranlarına itiraz hakkı ve tüketici hakları"
 category: "dava-turleri"
 categoryTitle: "Dava Türleri"
-date: 2024-04-01
+date: 2024-01-01
 layout: "layouts/article.njk"
 permalink: "/ziynet-esyalarinin-iadesi/"
 breadcrumbs:

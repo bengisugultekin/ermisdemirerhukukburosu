@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/aile-hukuku/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "Aile Hukuku", url: "/aile-hukuku/" }
 ---

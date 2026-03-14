@@ -1,729 +1,895 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- Basic Page Needs -->
-<meta charset="utf-8">
-<title>Anasayfa | Ermiş Hukuk Bürosu</title>
-
-<meta name="google-site-verification" content="-QyRbmMtAZpKeJkhwpO4_3zZbndr5H78wm1y-jAYUIU" />
-
-
-<!-- Mobile Specific Metas -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+<title>Ermiş Hukuk Bürosu</title>
 <meta name="description" content="Avukatlık ve Danışmanlık Bürosu">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="google-site-verification" content="-QyRbmMtAZpKeJkhwpO4_3zZbndr5H78wm1y-jAYUIU">
+
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="/images/mini-logo.svg">
+<link rel="icon" type="image/svg+xml" href="/images/logo.svg">
 
-<!-- CSS -->
-<!-- Bootstrap -->
-<link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
-<!-- FontAwesome -->
-<link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
-<!-- Animation -->
-<link rel="stylesheet" href="/plugins/animate-css/animate.css">
-<!-- slick Carousel -->
-<link rel="stylesheet" href="/plugins/slick/slick.css">
-<link rel="stylesheet" href="/plugins/slick/slick-theme.css">
-<!-- Colorbox -->
-<link rel="stylesheet" href="/plugins/colorbox/colorbox.css">
-<!-- Template styles-->
+<!-- Stylesheet -->
 <link rel="stylesheet" href="/css/style.css">
 
-<!-- Open Graph / Facebook -->
-
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ermishukukburosu.av.tr/">
-<meta property="og:title" content="Anasayfa | Ermiş Hukuk Bürosu">
+<meta property="og:title" content="Ermiş Hukuk Bürosu">
 <meta property="og:description" content="Avukatlık ve Danışmanlık Bürosu">
+<meta property="og:locale" content="tr_TR">
 
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ermiş Hukuk Bürosu">
+<meta name="twitter:description" content="Avukatlık ve Danışmanlık Bürosu">
 
-<!-- Canonical URL -->
+<!-- Canonical & Language -->
 <link rel="canonical" href="https://ermishukukburosu.av.tr/">
+<link rel="alternate" hreflang="tr" href="https://ermishukukburosu.av.tr/">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Ermiş Hukuk Bürosu",
+  "description": "Avukatlık ve Danışmanlık Bürosu",
+  "url": "https://ermishukukburosu.av.tr",
+  "telephone": "+905553499588",
+  "email": "ermishukukburosu@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tuna Mah, İbrahim Yılmaz 1714 Sk, No: 17 Büro: 301, Mertoğlu İş Merkezi",
+    "addressLocality": "Karşıyaka",
+    "addressRegion": "İzmir",
+    "postalCode": "35000",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "38.4637",
+    "longitude": "27.1087"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "15:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "İzmir"
+  }
+}
+</script>
+
+
+
+
+
 
 </head>
-
 <body>
 
-<div class="whats-float">
-  <a href="https://wa.me/905553499588" target="_blank">
-    <i class="fab fa-whatsapp"></i><span>Bize Ulaşın</span>
-  </a>
-</div>
+<div class="header-sentinel" id="headerSentinel"></div>
 
-<div class="body-inner">
-  <div id="top-bar" class="top-bar">
+<header class="header" id="header">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-8">
-        <ul class="top-info text-center text-md-left">
-          <li><i class="fas fa-map-marker-alt"></i>
-            <p class="info-text">Mertoğlu İş Merkezi, Karşıyaka</p>
-          </li>
-        </ul>
-      </div>
-      <!--/ Top info end -->
+    <div class="header__inner">
 
-      <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-        <ul class="list-unstyled">
-          <li>
-            <a title="Whatsapp" href="https://wa.me/905553499588">
-              <span class="social-icon"><i class="fab fa-whatsapp"></i></span>
-            </a>
-            <a title="Instagram" href="https://www.instagram.com/ermishukukburosu/">
-              <span class="social-icon"><i class="fab fa-instagram"></i></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!--/ Top social end -->
+      <a href="/" class="header__logo" aria-label="Anasayfa">
+        <img src="/images/logo.svg" alt="Ermiş Hukuk Bürosu" width="60" height="45">
+        <span class="header__logo-text">ERMİŞ HUKUK BÜROSU</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Ana menü">
+        <a href="/#hizmetler" class="header__nav-link" data-section="hizmetler">Hizmetler</a>
+        <a href="/#makaleler" class="header__nav-link" data-section="makaleler">Makaleler</a>
+        <a href="/#hakkimizda" class="header__nav-link" data-section="hakkimizda">Hakkımızda</a>
+        <a href="/#avukatlar" class="header__nav-link" data-section="avukatlar">Avukatlar</a>
+        <a href="/#iletisim" class="header__nav-link" data-section="iletisim">İletişim</a>
+      </nav>
+
+
+      <button class="header__toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
-    <!--/ Content row end -->
   </div>
-  <!--/ Container end -->
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-label="Mobil menü">
+  <a href="/#hizmetler" class="mobile-nav__link">Hizmetler</a>
+  <a href="/#makaleler" class="mobile-nav__link">Makaleler</a>
+  <a href="/#hakkimizda" class="mobile-nav__link">Hakkımızda</a>
+  <a href="/#avukatlar" class="mobile-nav__link">Avukatlar</a>
+  <a href="/#iletisim" class="mobile-nav__link">İletişim</a>
+  <div class="mobile-nav__contact">
+    <a href="tel:05553499588">(0555) 349 95 88</a>
+    <a href="mailto:ermishukukburosu@gmail.com">ermishukukburosu@gmail.com</a>
+  </div>
 </div>
 
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-        <div class="row align-items-center">
-          <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-            <a class="d-flex align-items-center" href="/" style="text-decoration: none;">
-              <img loading="lazy" src="/images/mini-logo.svg" alt="ErmisHukukBurosu" style="margin-right: 0.75rem;">
-              <span class="logo-title d-flex flex-column" style="color: #c9a227; font-weight: 700; font-size: 1.25rem; margin: 0; line-height: 1.2;">
-                <span>ERMİŞ</span>
-                <span>HUKUK BÜROSU</span>
-              </span>
-            </a>
-          </div>
-          <!-- logo end -->
 
-          <div class="col-lg-9 header-right">
-            <ul class="top-info-box">
-              <li>
-                <div class="info-box">
-                  <div class="info-box-content">
-                    <p class="info-box-title">Bizi Arayın</p>
-                    <p class="info-box-subtitle">(0555) 349 95 88</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="info-box">
-                  <div class="info-box-content">
-                    <p class="info-box-title">Bizi Arayın</p>
-                    <p class="info-box-subtitle">(0232) 502 39 08</p>
-                  </div>
-                </div>
-              </li>
-              <li class="last">
-                <div class="info-box last">
-                  <div class="info-box-content">
-                    <p class="info-box-title">Mail Adresimiz</p>
-                    <p class="info-box-subtitle">ermishukukburosu@gmail.com</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <!-- Ul end -->
-          </div>
-          <!-- header right end -->
-        </div>
-        <!-- logo area end -->
-      </div>
-      <!-- Row end -->
-    </div>
-    <!-- Container end -->
-  </div>
-
-  <div class="site-navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <nav class="navbar navbar-expand-lg navbar-dark p-0">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div id="navbar-collapse" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav mr-auto">
-                
-                  
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">Anasayfa</a>
-                    </li>
-                  
-                
-                  
-                    <li class="nav-item dropdown">
-                      <a href="/about/" class="nav-link dropdown-toggle" data-toggle="dropdown">Hakkımızda <i class="fa fa-angle-down"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        
-                          <li><a href="/about/">Biz Kimiz</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="nav-item">
-                      <a class="nav-link" href="/services/">Hizmetlerimiz</a>
-                    </li>
-                  
-                
-                  
-                    <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Yayınlar <i class="fa fa-angle-down"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        
-                          <li><a href="/aile-hukuku/">Aile Hukuku</a></li>
-                        
-                          <li><a href="/ceza-hukuku/">Ceza Hukuku</a></li>
-                        
-                          <li><a href="/icra-hukuku/">İcra ve İflas Hukuku</a></li>
-                        
-                          <li><a href="/is-hukuku/">İş Hukuku</a></li>
-                        
-                          <li><a href="/ticaret-hukuku/">Ticaret Hukuku</a></li>
-                        
-                          <li><a href="/gayrimenkul-hukuku/">Gayrimenkul Hukuku</a></li>
-                        
-                          <li><a href="/tuketici-hukuku/">Tüketici Hukuku</a></li>
-                        
-                          <li><a href="/dava-turleri/">Dava Türleri</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact/">İletişim</a>
-                    </li>
-                  
-                
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <!--/ Col end -->
-      </div>
-      <!--/ Row end -->
-    </div>
-    <!--/ Container end -->
-  </div>
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
-
-
+<main>
   
-  <div class="banner-carousel banner-carousel-1 mb-0">
-    <div class="banner-carousel-item" style="background-image:url(/images/slider-main/book.jpg)">
-      <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-            <div class="col-md-12 text-center">
-              <h2 class="slide-title" data-animation-in="slideInLeft">
-                SÜREKLİ DEĞİŞEN VE GELİŞEN HUKUK DÜNYASINDA</h2>
-              <h3 class="slide-sub-title" data-animation-in="slideInRight">30 SENELİK TECRÜBE İLE YANINDAYIZ</h3>
-              <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                <a href="/services/" class="slider btn btn-primary">HİZMETLERİMİZ</a>
-                <a href="/contact/" class="slider btn btn-primary border">BİZE ULAŞIN</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="banner-carousel-item" style="background-image:url(/images/slider-main/grey-marble.jpg)">
-      <div class="slider-content text-left">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-            <div class="col-md-12">
-              <h2 class="slide-title-box" data-animation-in="slideInDown">EN UYGUN EN ETKİLİ</h2>
-              <h3 class="slide-title" data-animation-in="fadeIn">UYUŞMAZLIĞINIZIN ÇÖZÜMÜ İÇİN</h3>
-              <h3 class="slide-sub-title" data-animation-in="slideInLeft">SEÇİMİNİZ BASİT</h3>
-              <p data-animation-in="slideInRight">
-                <a href="/services/" class="slider btn btn-primary border">HİZMETLERİMİZ</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <picture>
+        <source srcset="/images/slider-main/grey-marble.webp" type="image/webp">
+        <img src="/images/slider-main/grey-marble.jpg" alt="Ermiş Hukuk Bürosu" loading="eager" width="1920" height="1080">
+      </picture>
     </div>
-
-    <div class="banner-carousel-item" style="background-image:url(/images/slider-main/lawyer.jpg)">
-      <div class="slider-content text-right">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-            <div class="col-md-12">
-              <h2 class="slide-title" data-animation-in="slideInDown">HUKUKİ SORUNLARINIZIN ÇÖZÜMÜ VE ÖNLEMİ İÇİN</h2>
-              <h3 class="slide-sub-title" data-animation-in="fadeIn">PROFESYONEL DESTEĞE HAZIRIZ</h3>
-              <p class="slider-description lead" data-animation-in="slideInRight">Çok geç olmadan bizimle iletişime geçin</p>
-              <div data-animation-in="slideInLeft">
-                <a href="/contact/" class="slider btn btn-primary" aria-label="contact-with-us">İLETİŞİM</a>
-                <a href="/about/" class="slider btn btn-primary border" aria-label="learn-more-about-us">DAHA FAZLA BİLGİ</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="call-to-action-box no-padding">
     <div class="container">
-      <div class="action-style-box">
-        <div class="row align-items-center">
-          <div class="col-md-8 text-center text-md-left">
-            <div class="call-to-action-text">
-              <h3 class="action-title">HUKUKİ UYUŞMAZLIK KONUSUNDA BİZİMLE İLETİŞİME GEÇİN</h3>
-            </div>
-          </div>
-          <!-- Col end -->
-          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-            <div class="call-to-action-btn">
-              <a class="btn btn-dark" href="/contact/">BİZE ULAŞIN</a>
-            </div>
-          </div>
-          <!-- col end -->
+      <div class="hero__content">
+        <h1 class="hero__title">Hukukun Gücü, Deneyimin Güveni</h1>
+        <div class="hero__divider"></div>
+        <p class="hero__subtitle">30 yıllık tecrübe ile hukuki süreçlerinizde yanınızdayız. Etkin, hızlı ve güvenilir hukuki destek için doğru adrestesiniz.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/905553499588" target="_blank" rel="noopener" class="btn btn--outline-white">Bize Ulaşın</a>
         </div>
-        <!-- row end -->
       </div>
-      <!-- Action style box -->
     </div>
-    <!-- Container end -->
+    <div class="hero__scroll" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
   </section>
-  <!-- Action end -->
 
-  <section id="ts-features" class="ts-features">
+  <!-- ===== PRACTICE AREAS ===== -->
+  <section class="practice-areas section" id="hizmetler" aria-labelledby="hizmetler-title">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="ts-intro">
-            <h2 class="into-title">Hakkımızda</h2>
-            <h3 class="into-sub-title">ETKİN, HIZLI, GÜVENİLİR HUKUKİ SÜREÇLER</h3>
-            <p>Siz değerli müvekkil ve danışanlarımıza, hakkınızın tescil veya müdafaasında yürütülecek hukuki süreci şeffaf olarak anlatıyoruz. Duymak istediklerinizi değil duymanız gerekenleri söyleyerek, etkin ve güvenilir bir vekalet ilişkisi ile hukuki destek sunuyoruz.</p>
-          </div>
-          <!-- Intro box end -->
-
-          <div class="gap-20"></div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-trophy"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">ETKİN VE HIZLI SONUÇLAR</h3>
-                </div>
-              </div>
-              <!-- Service 1 end -->
-            </div>
-            <!-- col end -->
-
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-sliders-h"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">ŞEFFAF HUKUKİ SÜREÇLER</h3>
-                </div>
-              </div>
-              <!-- Service 2 end -->
-            </div>
-            <!-- col end -->
-          </div>
-          <!-- Content row 1 end -->
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-thumbs-up"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">GÜVENİLİR VEKALET İLİŞKİSİ</h3>
-                </div>
-              </div>
-              <!-- Service 1 end -->
-            </div>
-            <!-- col end -->
-
-            <div class="col-md-6">
-              <div class="ts-service-box">
-                <span class="ts-service-icon">
-                  <i class="fas fa-users"></i>
-                </span>
-                <div class="ts-service-box-content">
-                  <h3 class="service-box-title">GÜÇLÜ VE DİNAMİK KADRO</h3>
-                </div>
-              </div>
-              <!-- Service 2 end -->
-            </div>
-            <!-- col end -->
-          </div>
-          <!-- Content row 1 end -->
-        </div>
-        <!-- Col end -->
-
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <h3 class="into-sub-title">DEĞERLERİMİZ</h3>
-          <p>Bizden talep ettiğiniz hukuki destek sürecinde, başta Avukatlık Kanunu olmak üzere, tüm yasal sorumluluklarımızı yerine getirerek, etik değerlerimize sahip çıkarak, size şeffaf ve güvenilir hukuki danışma ya da temsil faaliyeti hizmeti için tüm ekip arkadaşlarımızla birlikte yanınızdayız.</p>
-
-          <div class="accordion accordion-group" id="our-values-accordion">
-            <div class="card">
-              <div class="card-header p-0 bg-transparent" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    GÜVENİLİR
-                  </button>
-                </h2>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header p-0 bg-transparent" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ETİK
-                  </button>
-                </h2>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header p-0 bg-transparent" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    DÜRÜSTLÜK VE DOĞRULUK
-                  </button>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!--/ Accordion end -->
-        </div>
-        <!-- Col end -->
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Uzmanlık Alanlarımız</span>
+        <h2 id="hizmetler-title">Hizmetlerimiz</h2>
       </div>
-      <!-- Row end -->
+
+      <div class="services-grid">
+        
+        <div class="service-item" data-animate="fade-up" data-delay="1">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-item__title">Aile Hukuku</h3>
+          <p class="service-item__desc">Boşanma, velayet, nafaka ve ziynet davalarında profesyonel hukuki destek.</p>
+        </div>
+        
+        <div class="service-item" data-animate="fade-up" data-delay="2">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="service-item__title">Ceza Hukuku</h3>
+          <p class="service-item__desc">Ceza davalarında ve soruşturmalarda etkin savunma ve temsil hizmeti.</p>
+        </div>
+        
+        <div class="service-item" data-animate="fade-up" data-delay="3">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><polyline points="14 4 10 12 14 12 10 20"/></svg>
+          </div>
+          <h3 class="service-item__title">İcra ve İflas Hukuku</h3>
+          <p class="service-item__desc">Alacaklı ve borçlu tarafları için icra süreçlerinin etkin yönetimi.</p>
+        </div>
+        
+        <div class="service-item" data-animate="fade-up" data-delay="4">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="service-item__title">Ticaret Hukuku</h3>
+          <p class="service-item__desc">Tacirler ve şirketler için ticari uyuşmazlık çözümü ve önleyici hukuk danışmanlığı.</p>
+        </div>
+        
+        <div class="service-item" data-animate="fade-up" data-delay="5">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+          </div>
+          <h3 class="service-item__title">İş Hukuku</h3>
+          <p class="service-item__desc">İşçi ve işveren uyuşmazlıklarında arabuluculuktan davaya her aşamada hukuki temsil.</p>
+        </div>
+        
+        <div class="service-item" data-animate="fade-up" data-delay="6">
+          <div class="service-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-item__title">Gayrimenkul Hukuku</h3>
+          <p class="service-item__desc">Kira, tapu iptal, ortaklığın giderilmesi ve taşınmaz uyuşmazlıklarında uzman danışmanlık.</p>
+        </div>
+        
+      </div>
     </div>
-    <!-- Container end -->
   </section>
-  <!-- Feature are end -->
 
-  <section id="facts" class="facts-area dark-bg">
+  <!-- ===== ARTICLES ===== -->
+  
+
+  <section class="articles section" id="makaleler" aria-labelledby="makaleler-title">
     <div class="container">
-      <div class="facts-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 ts-facts">
-            <div class="ts-facts-img">
-              <img loading="lazy" src="/images/icon-image/justice.png" alt="facts-img">
-            </div>
-          </div>
-          <!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
-            <div class="ts-facts-img">
-              <img loading="lazy" src="/images/icon-image/gavel.png" alt="facts-img">
-            </div>
-          </div>
-          <!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-            <div class="ts-facts-img">
-              <img loading="lazy" src="/images/icon-image/court_2.png" alt="facts-img">
-            </div>
-          </div>
-          <!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-            <div class="ts-facts-img">
-              <img loading="lazy" src="/images/icon-image/scale.png" alt="facts-img">
-            </div>
-          </div>
-          <!-- Col end -->
-        </div>
-        <!-- Facts end -->
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Güncel Yazılar</span>
+        <h2 id="makaleler-title">Makaleler</h2>
       </div>
-      <!--/ Content row end -->
+
+      <div class="articles__filters">
+        <button class="articles__filter-btn is-active" data-filter="all">Tümü</button>
+        <button class="articles__filter-btn" data-filter="aile-hukuku">Aile Hukuku</button>
+        <button class="articles__filter-btn" data-filter="ceza-hukuku">Ceza Hukuku</button>
+        <button class="articles__filter-btn" data-filter="icra-hukuku">İcra Hukuku</button>
+        <button class="articles__filter-btn" data-filter="tuketici-hukuku">Tüketici Hukuku</button>
+        <button class="articles__filter-btn" data-filter="dava-turleri">Dava Türleri</button>
+      </div>
+
+      <div class="articles__grid">
+        
+        
+          
+          
+          
+            <a href="/menfi-tespit/" class="articles__article card" data-category="dava-turleri" data-animate="fade-up" data-delay="1">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/lawyer.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/lawyer.jpg" alt="Dava Türleri" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Menfi Tespit Davası</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Dava Türleri</span>
+                  <span class="card__meta-date">25 December 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/terk/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="2">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Terk Sebebiyle Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">21 December 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/banka-yasal-takip/" class="articles__article card" data-category="icra-hukuku" data-animate="fade-up" data-delay="3">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/icra.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/icra.jpg" alt="İcra Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Banka Yasal Takip Borçlularının Hakları</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">İcra ve İflas Hukuku</span>
+                  <span class="card__meta-date">14 November 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/imar-kirliligi/" class="articles__article card" data-category="ceza-hukuku" data-animate="fade-up" data-delay="4">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/ceza.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/ceza.jpg" alt="Ceza Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">İmar Kirliliğine Neden Olma Suçu</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Ceza Hukuku</span>
+                  <span class="card__meta-date">05 November 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/tuketici-kavrami/" class="articles__article card" data-category="tuketici-hukuku" data-animate="fade-up" data-delay="5">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/book.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/book.jpg" alt="Tüketici Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Tüketici Kavramı</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Tüketici Hukuku</span>
+                  <span class="card__meta-date">04 November 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/evliligin-sona-ermesi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="6">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Evliliğin Sona Ermesi</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">01 November 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/nafakanin-arttirilmasi/" class="articles__article card" data-category="dava-turleri" data-animate="fade-up" data-delay="7">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/lawyer.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/lawyer.jpg" alt="Dava Türleri" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Nafakanın Arttırılması/Azaltılması Davası</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Dava Türleri</span>
+                  <span class="card__meta-date">22 October 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/bosanma/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="8">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">08 October 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/mal-rejimleri/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="9">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Mal Rejimleri</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">17 September 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/anlasmali-bosanma/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="10">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Anlaşmalı Boşanma (Eşlerin Anlaşması)</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">12 September 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/aile-konutu-serhi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="11">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Aile Konutu Şerhi</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">17 June 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/edinilmis-mallara-tasfiyesi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="12">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Edinilmiş Mallara Katılma Rejiminin Tasfiyesi</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">14 June 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/evlilik-birliginin-sarsilmasi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="13">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Evlilik Birliğinin Sarsılması (Şiddetli Geçimsizlik)</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">11 June 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/anlasmali-bosanma-protokolu/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="14">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Anlaşmalı Boşanma Protokolü Hazırlarken Dikkat Edilmesi Gereken Hususlar</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">20 March 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/ayipli-mal/" class="articles__article card" data-category="tuketici-hukuku" data-animate="fade-up" data-delay="15">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/book.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/book.jpg" alt="Tüketici Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ayıplı Mal</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Tüketici Hukuku</span>
+                  <span class="card__meta-date">08 March 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/tasarrufun-iptali/" class="articles__article card" data-category="dava-turleri" data-animate="fade-up" data-delay="16">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/lawyer.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/lawyer.jpg" alt="Dava Türleri" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Tasarrufun İptali Davası</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Dava Türleri</span>
+                  <span class="card__meta-date">07 February 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/ortak-hayatin-kurulamamasi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="17">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ortak Hayatın Yeniden Kurulamaması</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">22 January 2025</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/akil-hastaligi/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="18">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Akıl Hastalığı Sebebiyle Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">26 December 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/zina/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="19">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Zina Sebebiyle Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">15 December 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/bosanmanin-ferileri/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="20">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Boşanmanın Fer&#39;ileri</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">07 September 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/suc-isleme/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="21">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Suç İşleme veya Haysiyetsiz Hayat Sürme Sebebiyle Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">07 July 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/secimlik-hak/" class="articles__article card" data-category="tuketici-hukuku" data-animate="fade-up" data-delay="22">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/book.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/book.jpg" alt="Tüketici Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ayıplı Mal Tesliminde Tüketicinin Seçimlik Hakları</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Tüketici Hukuku</span>
+                  <span class="card__meta-date">08 June 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/hayata-kast/" class="articles__article card" data-category="aile-hukuku" data-animate="fade-up" data-delay="23">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/services/aile.webp" type="image/webp">
+                  <img class="card__image" src="/images/services/aile.jpg" alt="Aile Hukuku" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Hayata Kast, Pek Kötü veya Onur Kırıcı Davranış Sebebiyle Boşanma</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Aile Hukuku</span>
+                  <span class="card__meta-date">19 March 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+          
+          
+          
+            <a href="/ziynet-esyalarinin-iadesi/" class="articles__article card" data-category="dava-turleri" data-animate="fade-up" data-delay="24">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="/images/slider-main/lawyer.webp" type="image/webp">
+                  <img class="card__image" src="/images/slider-main/lawyer.jpg" alt="Dava Türleri" loading="lazy" width="400" height="220">
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ziynet Eşyalarının İadesi Davası</h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">Dava Türleri</span>
+                  <span class="card__meta-date">01 January 2024</span>
+                </p>
+              </div>
+            </a>
+          
+        
+      </div>
+
+      <div class="articles__more">
+        <a href="/aile-hukuku/" class="link-arrow" id="articlesMoreLink">Tümünü Gör</a>
+      </div>
     </div>
-    <!--/ Container end -->
   </section>
-  <!-- Facts end -->
 
-  <section id="ts-service-area" class="ts-service-area pb-0">
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="hakkimizda" aria-labelledby="hakkimizda-title">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h2 class="section-title">UZMANLIKLARIMIZ</h2>
-          <h3 class="section-sub-title">HİZMETLERİMİZ</h3>
+      <div class="about__grid">
+        <div class="about__image-wrapper" data-animate="slide-left">
+          <picture>
+            <source srcset="/images/slider-main/book.webp" type="image/webp">
+            <img loading="lazy" src="/images/slider-main/book.jpg" alt="Ermiş Hukuk Bürosu" width="600" height="450">
+          </picture>
         </div>
-      </div>
-      <!--/ Title row end -->
-
-      <div class="row">
-        <div class="col-lg-4">
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/divorce.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/aile-hukuku/">Aile Hukuku</a></h3>
-                <p class="service-box-justify">Toplumun temel taşı olan Aile&#39;yi düzenleyen Aile Hukukuna dair Nişanlanma, Boşanma, Velayet, Ziynet, Nafaka, vb. gibi tüm davalarınızda profesyonel destek veriyoruz.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/justice 2.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/ceza-hukuku/">Ceza Hukuku</a></h3>
-                <p class="service-box-justify">Savunmanın kutsallığı doğrultusunda müvekkillerimizi, tarafı oldukları ceza davalarında ve soruşturmalarında etkin bir şekilde temsil ediyor ve savunma hizmeti sunuyoruz.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/law.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/icra-hukuku/">İcra ve İflas Hukuku</a></h3>
-                <p class="service-box-justify">Alacak ve borç ilişkisinin tarafı olan alacaklıları ve borçluları, diğer tarafa karşı en iyi şekilde temsil ederek, alacaklının alacağına bir an önce kavuşturmaya ve borçlunun da tüm yasal haklarını kullanarak borcunu ödemesi için süreci en iyi şekilde yürütüyoruz.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-            
-          
-            
-          
-            
-          
-        </div>
-        <!-- Col end -->
-
-        <div class="col-lg-4 text-center">
-          <img loading="lazy" class="img-fluid" src="/images/services/lawyer.png" alt="service-avater-image">
-        </div>
-        <!-- Col end -->
-
-        <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
-          
-            
-          
-            
-          
-            
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/global-economy.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/ticaret-hukuku/">Ticaret Hukuku</a></h3>
-                <p class="service-box-justify">Gerçek kişi ve tüzel kişi tacirlerin, ticari hayatlarının her alanında karşılaştıkları sorunların çözümünde ve sorunlarla karşılaşmamaları için önleyici hukuk kapsamında gerekli tüm desteği kesintisiz olarak uzun yıllara dayanan tecrübe ile veriyoruz.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/labor-law.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/is-hukuku/">İş Hukuku</a></h3>
-                <p class="service-box-justify">Çalışma hayatındaki her türlü uyuşmazlığa, hem işçi hem de işveren vekili olarak arabuluculuk sürecinden başlayıp süreç sonuna kadar haklarınızı en etkili şekilde koruyoruz.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-            
-            <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="/images/icon-image/lease.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="/gayrimenkul-hukuku/">Gayrimenkul Hukuku</a></h3>
-                <p class="service-box-justify">Taşınmaz mal varlıklarınızdan kaynaklı başta kira hukukundan kaynaklı olmak üzere ortaklığın giderilmesi, muris muvazaasından kaynaklı tapu iptal tescil davaları olmak üzere her türlü gayrimenkul davası büromuzdaki uzman avukatlar ile titiz bir şekilde yürütülmektedir.</p>
-              </div>
-            </div>
-            <!-- Service end -->
-            
-          
-        </div>
-        <!-- Col end -->
-      </div>
-      <!-- Content row end -->
-    </div>
-    <!--/ Container end -->
-  </section>
-  <!-- Service end -->
-
-  <section class="subscribe no-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="subscribe-call-to-acton">
-            <h3>BİZE ULAŞIN</h3>
-            <h4>(0555) 349 95 88 - (0232) 502 39 08</h4>
+        <div class="about__content" data-animate="slide-right">
+          <div class="section-title">
+            <span class="section-label">Hakkımızda</span>
+            <h2 id="hakkimizda-title">Ermiş Hukuk Bürosu</h2>
           </div>
+          <p>Alanında uzman kadromuz ile bireysel ve kurumsal müvekkillerimize en yüksek seviyede hukuki hizmet sağlamaya taahhüt ettik. Kaliteli avukatlık pratiği ve etkin danışmanlık ile, sayısız başarılı davamız ve memnun müvekkilimiz bulunmaktadır.</p>
+          <p>Sizin için hakkın tescil veya müdafaasında yürütülecek hukuki süreci tam şeffaflık ile anlatıyoruz. Duymak istediğinizi değil, bilinmeniz gerekenleri söyleyerek, sizi her adımda bilgilendirir ve güvenilir vekalet ilişkisi içinde hukuki destek sunuyoruz.</p>
+        
         </div>
-        <!-- Col end -->
-
-        <div class="col-md-6">
-          <div class="ts-newsletter row align-items-center">
-            <div class="col-md-12 newsletter-introtext">
-              <h4 class="text-white mb-0">EPOSTA ADRESİMİZ</h4>
-              <p class="text-white">ermishukukburosu@gmail.com</p>
-            </div>
-          </div>
-          <!-- Newsletter end -->
-        </div>
-        <!-- Col end -->
       </div>
-      <!-- Content row end -->
     </div>
-    <!--/ Container end -->
   </section>
-  <!--/ subscribe end -->
 
-
-  <footer id="footer" class="footer bg-overlay">
-  <div class="footer-main">
+  <!-- ===== LAWYERS ===== -->
+  <section class="lawyers section" id="avukatlar" aria-labelledby="avukatlar-title">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-4 col-md-6 footer-widget footer-about">
-          <h3 class="widget-title">HAKKIMIZDA</h3>
-          <div class="d-flex" style="margin-bottom: 1rem;">
-          <img loading="lazy" height="52px" class="footer-logo" src="/images/mini-logo.svg" alt="ermishukukburosu" style="margin-right: 0.5rem;">
-          <span class="logo-title d-flex flex-column" style="color: #c9a227; font-weight: 700; font-size: 1.2rem; margin: 0; line-height: 1.2;">
-            <span>ERMİŞ</span>
-            <span>HUKUK BÜROSU</span>
-          </span>
-        </div>
-          <p>Ermiş Hukuk Bürosu olarak; tarafı olduğunuz her hukuki ilişkide sizleri en iyi şekilde temsil ediyor ve hukuki danışmanlık veriyoruz.</p>
-          <div class="footer-social">
-            <ul>
-              <li><a href="https://wa.me/905553499588" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-              <li><a href="https://www.instagram.com/ermishukukburosu/" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Ekibimiz</span>
+        <h2 id="avukatlar-title">Avukatlarımız</h2>
+      </div>
+
+      <div class="lawyers__grid">
+        
+        <div class="lawyers__card" data-animate="fade-up" data-delay="1">
+          <div class="lawyers__content">
+            <div class="lawyers__header">
+              <h3 class="lawyers__name">Av. Necat Ermiş</h3>
               
-              <li><a href="https://www.linkedin.com/in/necat-ermi%C5%9F-305807109" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+              <a class="lawyers__linkedin-link" href="https://www.linkedin.com/in/necat-ermi%C5%9F-305807109" target="_blank" rel="noopener" aria-label="Av. Necat Ermiş LinkedIn profili">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
               
-            </ul>
-          </div>
-          <!-- Footer social end -->
-        </div>
-        <!-- Col end -->
-
-        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
-          <h3 class="widget-title">ÇALIŞMA SAATLERİMİZ</h3>
-          <div class="working-hours">
-            Haftanın 6 günü, bayram ve resmi tatiller hariç her gün çalışıyoruz. Acil bir durumda bizimle iletişime geçiniz.
-            <br><br> Pazartesi - Cuma: <span class="text-right">08:00 - 19:00</span>
-            <br> Cumartesi: <span class="text-right">10:00 - 15:00</span>
+            </div>
+            <p class="lawyers__title">Kurucu Avukat</p>
+            <p class="lawyers__bio">Hukuki danışmanlık ve temsil hizmetlerini, meslek ilkelerine uygun bir şekilde, uygun kıdem ve deneyime sahip, konusunda uzmanlaşmış ekibiyle sunar. Kaliteden asla ödün vermeyen bir avukat olarak, mükemmeliyetçi bir özenle tüm hukuki sorunlarda sonuca götüren etkin çözümler geliştirir.</p>
           </div>
         </div>
-        <!-- Col end -->
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-          <h3 class="widget-title">HİZMETLERİMİZ</h3>
-          <ul class="list-arrow">
-            
-            <li><a href="/aile-hukuku/">Aile Hukuku</a></li>
-            
-            <li><a href="/ceza-hukuku/">Ceza Hukuku</a></li>
-            
-            <li><a href="/icra-hukuku/">İcra ve İflas Hukuku</a></li>
-            
-            <li><a href="/ticaret-hukuku/">Ticaret Hukuku</a></li>
-            
-            <li><a href="/is-hukuku/">İş Hukuku</a></li>
-            
-            <li><a href="/gayrimenkul-hukuku/">Gayrimenkul Hukuku</a></li>
-            
-          </ul>
+        
+        <div class="lawyers__card" data-animate="fade-up" data-delay="2">
+          <div class="lawyers__content">
+            <div class="lawyers__header">
+              <h3 class="lawyers__name">Av. Öykü Ermiş</h3>
+              
+              <a class="lawyers__linkedin-link" href="https://www.linkedin.com/in/öykü-ermiş/" target="_blank" rel="noopener" aria-label="Av. Öykü Ermiş LinkedIn profili">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              
+            </div>
+            <p class="lawyers__title">Avukat</p>
+            <p class="lawyers__bio">Genç ve dinamik kadronun temsilcisi olarak, hukuki süreçlerde müvekkillerine profesyonel ve etkin destek sağlamaktadır. Müvekkillerinin haklarının korunması için titiz bir çalışma tarzı ile çözüm odaklı hukuki destek sunar.</p>
+          </div>
         </div>
-        <!-- Col end -->
+        
       </div>
-      <!-- Row end -->
     </div>
-    <!-- Container end -->
-  </div>
-  <!-- Footer main end -->
+  </section>
 
-  <div class="copyright">
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="iletisim" aria-labelledby="iletisim-title">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="copyright-info">
-            <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script>, Ermiş Hukuk Bürosu</span>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="footer-menu text-center text-md-right">
-            <ul class="list-unstyled">
-              <li><a href="/about/">Hakkımızda</a></li>
-              <li><a href="/services/">Hizmetlerimiz</a></li>
-              <li><a href="/aile-hukuku/">Yayınlar</a></li>
-              <li><a href="/contact/">İletişim</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Row end -->
-
-      <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
-        <button class="btn btn-primary" title="Back to Top">
-          <i class="fa fa-angle-double-up"></i>
-        </button>
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Bize Ulaşın</span>
+        <h2 id="iletisim-title">İletişim</h2>
       </div>
 
+      <div class="contact__wrapper" data-animate="fade-up">
+        <div class="contact__items">
+          <a href="https://wa.me/905553499588" target="_blank" rel="noopener" class="contact__item contact__item--whatsapp">
+            <div class="contact__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div class="contact__item-content">
+              <h3>Mesaj Atın</h3>
+              <p>(0555) 349 95 88</p>
+            </div>
+          </a>
+
+          <a href="tel:02325023908" class="contact__item">
+            <div class="contact__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact__item-content">
+              <h3>Bizi Arayın</h3>
+              <p>(0232) 502 39 08</p>
+            </div>
+          </a>
+
+          <a href="https://maps.app.goo.gl/x9mUUkCYywjCcYaQA" target="_blank" rel="noopener" class="contact__item">
+            <div class="contact__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact__item-content">
+              <h3>Ofisimizi Ziyaret Edin</h3>
+              <address style="font-style: normal;">Tuna Mah, İbrahim Yılmaz 1714 Sk, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</address>
+            </div>
+          </a>
+
+          <a href="mailto:ermishukukburosu@gmail.com" class="contact__item">
+            <div class="contact__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact__item-content">
+              <h3>Mail Atın</h3>
+              <p>ermishukukburosu@gmail.com</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact__map" id="mapContainer" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512.136421880577!2d27.42538667013304!3d38.6172402580963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9634bdcf54a9d%3A0x287992abbe3bcb04!2zRVJNxLDFniBIVUtVSyBCw5xST1NVIHwgS2FyxZ_EsXlha2EgS2lyYSBBdnVrYXTEsSB8IEthcsWfxLF5YWthIEJvxZ9hbm1hIEF2dWthdMSxIHwgS2FyxZ_EsXlha2EgTWlyYXMgQXZ1a2F0xLEgfCBTaXRlIFnDtm5ldGltaSBBdnVrYXTEsQ!5e0!3m2!1sen!2str!4v1773419457441!5m2!1sen!2str">
+        </div>
+      </div>
     </div>
-    <!-- Container end -->
+  </section>
+
+
+</main>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__left">
+        <img src="/images/logo.svg" alt="Ermiş Hukuk Bürosu" class="footer__logo">
+        <p class="footer__copyright">&copy; <span id="currentYear"></span> Ermiş Hukuk Bürosu. Tüm hakları saklıdır.</p>
+      </div>
+      <div class="footer__right">
+        <a href="https://instagram.com/ermishukukburosu" target="_blank" rel="noopener noreferrer" class="footer__link" title="Instagram">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.849 0 3.205-.012 3.584-.07 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm4.846-10.355c0 .795.645 1.44 1.44 1.44s1.44-.645 1.44-1.44-.645-1.44-1.44-1.44-1.44.645-1.44 1.44z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/905553499588" target="_blank" rel="noopener noreferrer" class="footer__link" title="WhatsApp">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+        </a>
+        <a href="tel:+905553499588" class="footer__link" title="Telefon">
+          <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
-  <!-- Copyright end -->
 </footer>
 
 
-  
-    <!-- Javascript Files -->
-<!-- initialize jQuery Library -->
-<script src="/plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap jQuery -->
-<script src="/plugins/bootstrap/bootstrap.min.js" defer></script>
-<!-- Slick Carousel -->
-<script src="/plugins/slick/slick.min.js"></script>
-<script src="/plugins/slick/slick-animation.min.js"></script>
-<!-- Color box -->
-<script src="/plugins/colorbox/jquery.colorbox.js"></script>
-<!-- shuffle -->
-<script src="/plugins/shuffle/shuffle.min.js" defer></script>
-
-<!-- Template custom -->
-<script src="/js/script.js"></script>
-
-  
+<div class="back-to-top" id="backToTop" aria-label="Sayfa başına dön">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </div>
-<!-- Body inner end -->
+
+
+  <script src="/js/site.js" defer></script>
+
+
+
 </body>
 </html>

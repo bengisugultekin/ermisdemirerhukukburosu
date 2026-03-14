@@ -1,0 +1,68 @@
+// ==============================================
+// Articles Section (Homepage)
+// ==============================================
+
+.articles {
+  background: $gray-100;
+
+  // Filter tabs
+  &__filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $space-xs;
+    margin-bottom: $space-xl;
+  }
+
+  &__filter-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: $text-sm;
+    font-weight: 500;
+    color: $gray-600;
+    background: $white;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all $transition-fast;
+
+    &:hover {
+      color: $accent-dark;
+      background: $accent-muted;
+    }
+
+    &.is-active {
+      color: $accent-dark;
+      background: $accent-muted;
+      border-color: $accent;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-lg;
+
+    @media (max-width: $bp-xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__article {
+    &.is-hidden {
+      display: none;
+    }
+  }
+
+  &__more {
+    text-align: center;
+    margin-top: $space-xl;
+  }
+}

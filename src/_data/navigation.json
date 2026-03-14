@@ -1,64 +1,29 @@
 {
   "main": [
     {
-      "title": "Anasayfa",
-      "url": "/"
+      "title": "Hizmetler",
+      "url": "/#hizmetler",
+      "sectionId": "hizmetler"
+    },
+    {
+      "title": "Makaleler",
+      "url": "/#makaleler",
+      "sectionId": "makaleler"
     },
     {
       "title": "Hakkımızda",
-      "url": "/about/",
-      "children": [
-        {
-          "title": "Biz Kimiz",
-          "url": "/about/"
-        }
-      ]
+      "url": "/#hakkimizda",
+      "sectionId": "hakkimizda"
     },
     {
-      "title": "Hizmetlerimiz",
-      "url": "/services/"
-    },
-    {
-      "title": "Yayınlar",
-      "url": "#",
-      "children": [
-        {
-          "title": "Aile Hukuku",
-          "url": "/aile-hukuku/"
-        },
-        {
-          "title": "Ceza Hukuku",
-          "url": "/ceza-hukuku/"
-        },
-        {
-          "title": "İcra ve İflas Hukuku",
-          "url": "/icra-hukuku/"
-        },
-        {
-          "title": "İş Hukuku",
-          "url": "/is-hukuku/"
-        },
-        {
-          "title": "Ticaret Hukuku",
-          "url": "/ticaret-hukuku/"
-        },
-        {
-          "title": "Gayrimenkul Hukuku",
-          "url": "/gayrimenkul-hukuku/"
-        },
-        {
-          "title": "Tüketici Hukuku",
-          "url": "/tuketici-hukuku/"
-        },
-        {
-          "title": "Dava Türleri",
-          "url": "/dava-turleri/"
-        }
-      ]
+      "title": "Avukatlar",
+      "url": "/#avukatlar",
+      "sectionId": "avukatlar"
     },
     {
       "title": "İletişim",
-      "url": "/contact/"
+      "url": "/#iletisim",
+      "sectionId": "iletisim"
     }
   ]
 }

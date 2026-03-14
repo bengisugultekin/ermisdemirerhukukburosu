@@ -1,0 +1,94 @@
+// ==============================================
+// Footer
+// ==============================================
+
+.footer {
+  background: $black;
+  border-top: 1px solid rgba($white, 0.08);
+  padding: $space-lg 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $space-lg;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  &__logo {
+    height: 40px;
+    width: auto;
+  }
+
+  &__copyright {
+    padding: 0;
+    margin: 0;
+    font-size: $text-sm;
+    color: $gray-600;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: $gray-600;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Back to top
+.back-to-top {
+  position: fixed;
+  bottom: $space-lg;
+  right: $space-lg;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $accent;
+  color: $white;
+  border-radius: $radius-full;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $transition-base, visibility $transition-base;
+  box-shadow: $shadow-md;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background: $accent-dark;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

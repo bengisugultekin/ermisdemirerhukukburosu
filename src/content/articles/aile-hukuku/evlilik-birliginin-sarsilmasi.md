@@ -3,7 +3,7 @@ title: "Evlilik Birliğinin Sarsılması (Şiddetli Geçimsizlik)"
 description: "Evlilik birliğinin sarsılması sebebiyle boşanma davası şartları ve hangi hallerde sarsılma kabul edilir"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-06-11
 layout: "layouts/article.njk"
 permalink: "/evlilik-birliginin-sarsilmasi/"
 breadcrumbs:

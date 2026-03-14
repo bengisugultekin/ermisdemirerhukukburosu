@@ -3,7 +3,7 @@ title: "Ayıplı Mal Tesliminde Tüketicinin Seçimlik Hakları"
 description: "Ayıplı mal tesliminde tüketicinin seçimlik hakları, zamanaşımı süreleri ve süreçleri"
 category: "tuketici-hukuku"
 categoryTitle: "Tüketici Hukuku"
-date: 2024-04-01
+date: 2024-06-08
 layout: "layouts/article.njk"
 permalink: "/secimlik-hak/"
 breadcrumbs:

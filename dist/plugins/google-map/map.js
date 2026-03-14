@@ -32,7 +32,7 @@ function initMap() {
       });
 
       const infoWindow = new google.maps.InfoWindow({
-        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 SK, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
+        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 Sk, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
       });
 
       // AdvancedMarkerElement uses addEventListener with 'gmp-click' event
@@ -53,7 +53,7 @@ function initMap() {
       });
 
       const infoWindow = new google.maps.InfoWindow({
-        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 SK, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
+        content: '<div style="padding: 10px;"><strong>Ermiş Hukuk Bürosu</strong><br>Tuna Mah, İbrahim Yılmaz 1714 Sk, No: 17 Büro: 301, Mertoğlu İş Merkezi, Karşıyaka/İzmir</div>'
       });
 
       marker.addListener('click', () => {

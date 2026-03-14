@@ -1,0 +1,75 @@
+// ==============================================
+// Category Listing Page
+// ==============================================
+
+.category-page {
+  padding: $space-xl 0 $space-3xl;
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: $space-xl;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+  }
+
+  &__card {
+    background: $white;
+    border-radius: $radius-md;
+    padding: $space-lg;
+    box-shadow: $shadow-sm;
+    border-left: 4px solid transparent;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:hover {
+      border-left-color: $accent;
+      box-shadow: $shadow-md;
+    }
+  }
+
+  &__card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    font-size: $text-xs;
+    color: $gray-600;
+    margin-bottom: $space-xs;
+  }
+
+  &__card-title {
+    font-family: $font-heading;
+    font-size: $text-2xl;
+    font-weight: 600;
+    margin-bottom: $space-sm;
+
+    a {
+      color: $charcoal;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__card-excerpt {
+    font-size: $text-sm;
+    color: $gray-600;
+    line-height: 1.7;
+    margin-bottom: $space-md;
+  }
+
+  &__load-more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: $space-3xl;
+  }
+}

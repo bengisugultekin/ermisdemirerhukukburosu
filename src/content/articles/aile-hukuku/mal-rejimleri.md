@@ -3,7 +3,7 @@ title: "Mal Rejimleri"
 description: "Mal rejimi türleri, yasal mal rejimi ve mal rejimi değişikliği hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-09-17
 layout: "layouts/article.njk"
 permalink: "/mal-rejimleri/"
 breadcrumbs:

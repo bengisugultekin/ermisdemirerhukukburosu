@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/gayrimenkul-hukuku/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "Gayrimenkul Hukuku", url: "/gayrimenkul-hukuku/" }
 ---

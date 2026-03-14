@@ -3,7 +3,7 @@ title: "Terk Sebebiyle Boşanma"
 description: "Terk sebebiyle boşanma davası şartları, süreleri ve hukuki sonuçları hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-12-21
 layout: "layouts/article.njk"
 permalink: "/terk/"
 breadcrumbs:

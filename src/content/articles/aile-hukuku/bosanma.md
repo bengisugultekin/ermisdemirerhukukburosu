@@ -3,7 +3,7 @@ title: "Boşanma"
 description: "Boşanma davası süreçleri, şartları ve avukat gerekliliği hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2025-10-08
 layout: "layouts/article.njk"
 permalink: "/bosanma/"
 breadcrumbs:

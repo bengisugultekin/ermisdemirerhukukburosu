@@ -3,7 +3,7 @@ title: "Suç İşleme veya Haysiyetsiz Hayat Sürme Sebebiyle Boşanma"
 description: "Suç işleme veya haysiyetsiz hayat sürme sebebiyle boşanma davası şartları ve hukuki sonuçları"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2024-07-07
 layout: "layouts/article.njk"
 permalink: "/suc-isleme/"
 breadcrumbs:

@@ -3,7 +3,7 @@ title: "Ortak Hayatın Yeniden Kurulamaması"
 description: "Ortak hayatın yeniden kurulamaması sebebiyle boşanma davası şartları ve süreçleri"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2025-01-22
 layout: "layouts/article.njk"
 permalink: "/ortak-hayatin-kurulamamasi/"
 breadcrumbs:

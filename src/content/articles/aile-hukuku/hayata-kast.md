@@ -3,7 +3,7 @@ title: "Hayata Kast, Pek Kötü veya Onur Kırıcı Davranış Sebebiyle Boşanm
 description: "Hayata kast, pek kötü veya onur kırıcı davranış sebebiyle boşanma davası şartları ve süreçleri"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2024-03-19
 layout: "layouts/article.njk"
 permalink: "/hayata-kast/"
 breadcrumbs:

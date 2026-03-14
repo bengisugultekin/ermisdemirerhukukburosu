@@ -1,0 +1,68 @@
+// ==============================================
+// Breadcrumb
+// ==============================================
+
+.breadcrumb-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/bookshelf.webp') center / cover no-repeat fixed;
+  background-color: $black;
+  height: 280px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $space-xl;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $text-4xl;
+    color: $white;
+    margin-bottom: $space-sm;
+
+    @media (max-width: $bp-md) {
+      font-size: $text-2xl;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    font-size: $text-sm;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: $space-xs;
+      color: $gray-300;
+
+      &::after {
+        content: '/';
+        color: $gray-600;
+        margin-left: $space-xs;
+      }
+
+      &:last-child {
+        color: $accent-dark;
+        font-weight: 600;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      a {
+        color: $gray-300;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}

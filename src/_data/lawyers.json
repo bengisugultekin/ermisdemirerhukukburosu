@@ -1,0 +1,18 @@
+{
+  "team": [
+    {
+      "name": "Av. Necat Ermiş",
+      "title": "Kurucu Avukat",
+      "image": "/images/team/necat.jpeg",
+      "bio": "Hukuki danışmanlık ve temsil hizmetlerini, meslek ilkelerine uygun bir şekilde, uygun kıdem ve deneyime sahip, konusunda uzmanlaşmış ekibiyle sunar. Kaliteden asla ödün vermeyen bir avukat olarak, mükemmeliyetçi bir özenle tüm hukuki sorunlarda sonuca götüren etkin çözümler geliştirir.",
+      "linkedin": "https://www.linkedin.com/in/necat-ermi%C5%9F-305807109"
+    },
+    {
+      "name": "Av. Öykü Ermiş",
+      "title": "Avukat",
+      "image": "/images/team/oyku.jpeg",
+      "bio": "Genç ve dinamik kadronun temsilcisi olarak, hukuki süreçlerde müvekkillerine profesyonel ve etkin destek sağlamaktadır. Müvekkillerinin haklarının korunması için titiz bir çalışma tarzı ile çözüm odaklı hukuki destek sunar.",
+      "linkedin": "https://www.linkedin.com/in/öykü-ermiş/"
+    }
+  ]
+}
