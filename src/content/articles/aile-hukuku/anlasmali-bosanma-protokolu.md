@@ -3,7 +3,7 @@ title: "Anlaşmalı Boşanma Protokolü Hazırlarken Dikkat Edilmesi Gereken Hus
 description: "Anlaşmalı boşanma protokolü hazırlarken dikkat edilmesi gereken önemli hususlar ve yasal gereklilikler"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2025-10-20
+date: 2025-03-20
 layout: "layouts/article.njk"
 permalink: "/anlasmali-bosanma-protokolu/"
 breadcrumbs:

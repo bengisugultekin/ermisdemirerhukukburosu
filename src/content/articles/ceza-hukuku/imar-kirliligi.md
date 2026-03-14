@@ -3,7 +3,7 @@ title: "İmar Kirliliğine Neden Olma Suçu"
 description: "İmar kirliliğine neden olma suçu, cezaları ve zamanaşımı süreleri hakkında detaylı bilgi"
 category: "ceza-hukuku"
 categoryTitle: "Ceza Hukuku"
-date: 2025-05-05
+date: 2025-11-05
 layout: "layouts/article.njk"
 permalink: "/imar-kirliligi/"
 breadcrumbs:

@@ -3,7 +3,7 @@ title: "Menfi Tespit Davası"
 description: "Menfi tespit davası nedir, şartları ve süreçleri hakkında detaylı bilgi"
 category: "dava-turleri"
 categoryTitle: "Dava Türleri"
-date: 2024-12-21
+date: 2025-12-25
 layout: "layouts/article.njk"
 permalink: "/menfi-tespit/"
 breadcrumbs:

@@ -11,11 +11,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/tuketici-kavrami/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://ermishukukburosu.av.tr/secimlik-hak/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -32,11 +27,6 @@
   </url>
   <url>
     <loc>https://ermishukukburosu.av.tr/zina/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/menfi-tespit/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -61,12 +51,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/imar-kirliligi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/banka-yasal-takip/</loc>
+    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma-protokolu/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,7 +66,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/nafakanin-arttirilmasi/</loc>
+    <loc>https://ermishukukburosu.av.tr/aile-konutu-serhi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -101,7 +86,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma-protokolu/</loc>
+    <loc>https://ermishukukburosu.av.tr/nafakanin-arttirilmasi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -111,12 +96,27 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/aile-konutu-serhi/</loc>
+    <loc>https://ermishukukburosu.av.tr/tuketici-kavrami/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/imar-kirliligi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/banka-yasal-takip/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ermishukukburosu.av.tr/terk/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/menfi-tespit/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

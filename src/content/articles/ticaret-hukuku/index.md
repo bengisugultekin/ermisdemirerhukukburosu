@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/ticaret-hukuku/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "Ticaret Hukuku", url: "/ticaret-hukuku/" }
 ---

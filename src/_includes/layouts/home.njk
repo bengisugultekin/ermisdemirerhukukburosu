@@ -81,7 +81,7 @@
           {% set category = article.data.category %}
           {% set img = categoryImages[category] %}
           {% if img %}
-            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ loop.index }}">
+            <a href="{{ article.url }}" class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ loop.index }}">
               <div class="card__image-wrapper">
                 <picture>
                   <source srcset="{{ img.webp }}" type="image/webp">
@@ -89,15 +89,13 @@
                 </picture>
               </div>
               <div class="card__body">
-                <h3 class="card__title">
-                  <a href="{{ article.url }}">{{ article.data.title }}</a>
-                </h3>
+                <h3 class="card__title">{{ article.data.title }}</h3>
                 <p class="card__meta">
                   <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
                   <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
                 </p>
               </div>
-            </article>
+            </a>
           {% endif %}
         {% endfor %}
       </div>
@@ -123,7 +121,7 @@
             <span class="section-label">Hakkımızda</span>
             <h2 id="hakkimizda-title">Ermiş Hukuk Bürosu</h2>
           </div>
-          <p>Alanında uzman kadromuz ile bireysel ve kurumsal müvekkillerimize en yüksek seviyede hukuki hizmet sağlamaya taahhüt ettik. Kaliteli avukatlık prátiği ve etkin danışmanlık ile, sayısız başarılı davamız ve memnun müvekkilimiz bulunmaktadır.</p>
+          <p>Alanında uzman kadromuz ile bireysel ve kurumsal müvekkillerimize en yüksek seviyede hukuki hizmet sağlamaya taahhüt ettik. Kaliteli avukatlık pratiği ve etkin danışmanlık ile, sayısız başarılı davamız ve memnun müvekkilimiz bulunmaktadır.</p>
           <p>Sizin için hakkın tescil veya müdafaasında yürütülecek hukuki süreci tam şeffaflık ile anlatıyoruz. Duymak istediğinizi değil, bilinmeniz gerekenleri söyleyerek, sizi her adımda bilgilendirir ve güvenilir vekalet ilişkisi içinde hukuki destek sunuyoruz.</p>
         
         </div>

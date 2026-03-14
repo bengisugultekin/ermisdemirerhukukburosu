@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/tuketici-hukuku/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "Tüketici Hukuku", url: "/tuketici-hukuku/" }
 ---

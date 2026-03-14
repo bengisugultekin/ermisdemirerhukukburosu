@@ -67,6 +67,13 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd.MM.yyyy");
   });
 
+  eleventyConfig.addFilter("truncate", (str, length) => {
+    if (!str) return "";
+    const text = str.replace(/<[^>]*>/g, "");
+    if (text.length <= length) return text;
+    return text.slice(0, length).trimEnd() + "...";
+  });
+
   eleventyConfig.addFilter("truncateWords", (str, count) => {
     if (!str) return "";
     const words = str.split(/\s+/);

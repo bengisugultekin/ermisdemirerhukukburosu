@@ -2,6 +2,19 @@
 // Layout System
 // ==============================================
 
+// Sticky footer
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: $container-max;
   margin: 0 auto;

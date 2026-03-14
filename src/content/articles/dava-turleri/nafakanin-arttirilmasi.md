@@ -3,7 +3,7 @@ title: "Nafakanın Arttırılması/Azaltılması Davası"
 description: "Nafakanın arttırılması ve azaltılması davası şartları, süreçleri ve hukuki sonuçları"
 category: "dava-turleri"
 categoryTitle: "Dava Türleri"
-date: 2025-08-22
+date: 2025-10-22
 layout: "layouts/article.njk"
 permalink: "/nafakanin-arttirilmasi/"
 breadcrumbs:

@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/icra-hukuku/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "İcra ve İflas Hukuku", url: "/icra-hukuku/" }
 ---

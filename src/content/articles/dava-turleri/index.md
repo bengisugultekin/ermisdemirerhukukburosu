@@ -7,6 +7,6 @@ layout: "layouts/category.njk"
 permalink: "/dava-turleri/"
 breadcrumbs:
   - { title: "Anasayfa", url: "/" }
-  - { title: "Yayınlar", url: "#" }
+  - { title: "Yayınlar", url: "/#makaleler" }
   - { title: "Dava Türleri", url: "/dava-turleri/" }
 ---
