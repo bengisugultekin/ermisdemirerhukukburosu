@@ -66,70 +66,9 @@
     margin-bottom: $space-md;
   }
 
-  &__pagination {
+  &__load-more {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: $space-sm;
     margin-top: $space-3xl;
-    flex-wrap: wrap;
-  }
-}
-
-.pagination {
-  &__btn {
-    padding: 0.5rem 1rem;
-    background: transparent;
-    border: 1px solid $gray-300;
-    border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: $charcoal;
-    cursor: pointer;
-    transition: color $transition-base, border-color $transition-base;
-
-    &:hover:not(:disabled) {
-      color: $accent;
-      border-color: $accent;
-    }
-
-    &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
-  }
-
-  &__numbers {
-    display: flex;
-    gap: 0.25rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  &__number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 32px;
-    height: 32px;
-    background: transparent;
-    border: 1px solid $gray-300;
-    border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: $charcoal;
-    cursor: pointer;
-    transition: color $transition-base, border-color $transition-base;
-
-    &:hover {
-      color: $accent;
-      border-color: $accent;
-    }
-
-    &.active {
-      color: $accent;
-      border-color: $accent;
-      font-weight: 600;
-    }
   }
 }

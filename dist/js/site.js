@@ -203,75 +203,36 @@
     }, { passive: true });
   }
 
-  // --- Category Page Pagination ---
-  const ITEMS_PER_PAGE = 6;
+  // --- Load More Button ---
+  const loadMoreBtn = document.getElementById('load-more-btn');
   const articlesContainer = document.getElementById('articles-container');
 
-  if (articlesContainer) {
+  if (loadMoreBtn && articlesContainer) {
     const articles = Array.from(articlesContainer.querySelectorAll('[data-article-index]'));
-    const totalPages = Math.ceil(articles.length / ITEMS_PER_PAGE);
-    let currentPage = 1;
+    const ITEMS_TO_SHOW = 6;
+    let visibleCount = ITEMS_TO_SHOW;
 
-    const paginationContainer = document.getElementById('pagination-container');
-    const paginationNumbers = document.getElementById('pagination-numbers');
-    const prevBtn = document.getElementById('pagination-prev');
-    const nextBtn = document.getElementById('pagination-next');
+    // Hide articles after the first 6
+    articles.forEach((article, idx) => {
+      if (idx >= ITEMS_TO_SHOW) {
+        article.style.display = 'none';
+      }
+    });
 
-    if (paginationContainer && totalPages > 1) {
-      // Create page number buttons
-      for (let i = 1; i <= totalPages; i++) {
-        const pageBtn = document.createElement('button');
-        pageBtn.className = 'pagination__number';
-        pageBtn.textContent = i;
-        pageBtn.setAttribute('data-page', i);
-        if (i === 1) pageBtn.classList.add('active');
+    loadMoreBtn.addEventListener('click', () => {
+      const nextBatch = Math.min(visibleCount + 6, articles.length);
 
-        pageBtn.addEventListener('click', () => {
-          currentPage = i;
-          updatePagination();
-          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-
-        paginationNumbers.appendChild(pageBtn);
+      for (let i = visibleCount; i < nextBatch; i++) {
+        articles[i].style.display = '';
       }
 
-      function updatePagination() {
-        const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
-        const endIdx = startIdx + ITEMS_PER_PAGE;
+      visibleCount = nextBatch;
 
-        // Show/hide articles
-        articles.forEach((article, idx) => {
-          article.style.display = idx >= startIdx && idx < endIdx ? '' : 'none';
-        });
-
-        // Update button states
-        prevBtn.disabled = currentPage === 1;
-        nextBtn.disabled = currentPage === totalPages;
-
-        // Update active page number
-        paginationNumbers.querySelectorAll('.pagination__number').forEach(btn => {
-          btn.classList.toggle('active', btn.getAttribute('data-page') == currentPage);
-        });
+      // Hide button if all articles are shown
+      if (visibleCount >= articles.length) {
+        loadMoreBtn.style.display = 'none';
       }
-
-      prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-          currentPage--;
-          updatePagination();
-          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-
-      nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) {
-          currentPage++;
-          updatePagination();
-          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-
-      updatePagination();
-    }
+    });
   }
 
 })();
