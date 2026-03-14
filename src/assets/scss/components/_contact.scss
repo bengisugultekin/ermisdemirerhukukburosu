@@ -5,7 +5,7 @@
 .contact {
   background: $white;
 
-  &__grid {
+  &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: $space-xl;
@@ -16,53 +16,101 @@
     }
   }
 
-  &__info {
-    display: flex;
-    flex-direction: column;
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: $space-lg;
-  }
 
-  &__details {
-    display: flex;
-    flex-direction: column;
-    gap: $space-sm;
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     display: flex;
-    align-items: flex-start;
-    gap: $space-sm;
-    padding: $space-md;
-    background: $gray-100;
-    border-radius: $radius-md;
+    flex-direction: column;
+    gap: $space-md;
+    padding: $space-lg;
+    text-align: center;
+    background: transparent;
+    border-radius: 0;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all $transition-base;
+    cursor: pointer;
+
+    &:hover {
+      .contact__item-icon {
+        color: darken($accent, 10%);
+        transform: scale(1.1);
+      }
+
+      .contact__item-content h3 {
+        color: $accent;
+      }
+
+      .contact__item-content p,
+      .contact__item-content address {
+        color: $accent;
+      }
+    }
+
+    &--whatsapp:hover {
+      .contact__item-icon {
+        color: #25D366;
+      }
+
+      .contact__item-content h3,
+      .contact__item-content p {
+        color: #25D366;
+      }
+    }
 
     &-icon {
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
+      width: 56px;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: $accent-muted;
-      border-radius: $radius-full;
+      background: transparent;
+      border-radius: 0;
       color: $accent;
+      transition: all $transition-base;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        color: inherit;
+      }
+    }
+
+    &--whatsapp &-icon {
+      color: $accent;
+    }
+
+    &--whatsapp:hover &-icon {
+      color: #25D366;
     }
 
     &-content {
       flex: 1;
 
-      h4 {
-        font-size: $text-sm;
+      h3 {
+        font-size: $text-base;
         font-weight: 600;
         color: $charcoal;
         margin-bottom: 0.5rem;
+        transition: color $transition-base;
       }
 
       p, address {
         font-size: $text-sm;
         color: $gray-600;
         margin-bottom: 0;
-        line-height: 1.5;
+        line-height: 1.6;
+        transition: color $transition-base;
       }
     }
 
@@ -74,33 +122,18 @@
   }
 
   &__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: inline-block;
     font-size: $text-sm;
     color: $gray-600;
     transition: color $transition-base;
-
-    svg {
-      flex-shrink: 0;
-      color: $gray-600;
-      transition: color $transition-base;
-    }
+    text-decoration: none;
 
     &:hover {
       color: $accent;
-
-      svg {
-        color: $accent;
-      }
     }
 
     &--whatsapp:hover {
       color: #25D366;
-
-      svg {
-        color: #25D366;
-      }
     }
   }
 
@@ -108,7 +141,7 @@
     width: 100%;
     height: 100%;
     min-height: 400px;
-    border-radius: $radius-md;
+    border-radius: 0;
     overflow: hidden;
     background: $gray-100;
 

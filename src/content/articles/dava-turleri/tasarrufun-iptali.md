@@ -3,7 +3,7 @@ title: "Tasarrufun İptali Davası"
 description: "Tasarrufun iptali davası şartları, iptale tabi tasarruflar ve yargılama usulü hakkında detaylı bilgi"
 category: "dava-turleri"
 categoryTitle: "Dava Türleri"
-date: 2024-04-01
+date: 2025-02-07
 layout: "layouts/article.njk"
 permalink: "/tasarrufun-iptali/"
 breadcrumbs:

@@ -3,7 +3,7 @@ title: "Banka Yasal Takip Borçlularının Hakları"
 description: "Banka yasal takip sürecinde borçluların hakları, faiz oranlarına itiraz ve yasal düzenlemeler"
 category: "icra-hukuku"
 categoryTitle: "İcra ve İflas Hukuku"
-date: 2024-04-01
+date: 2025-05-14
 layout: "layouts/article.njk"
 permalink: "/banka-yasal-takip/"
 breadcrumbs:

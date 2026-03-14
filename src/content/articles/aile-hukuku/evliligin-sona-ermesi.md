@@ -3,7 +3,7 @@ title: "Evliliğin Sona Ermesi"
 description: "Evliliğin sona ermesi sebepleri ve hukuki sonuçları hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2025-11-01
 layout: "layouts/article.njk"
 permalink: "/evliligin-sona-ermesi/"
 breadcrumbs:

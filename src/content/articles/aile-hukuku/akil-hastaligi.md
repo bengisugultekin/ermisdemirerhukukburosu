@@ -3,7 +3,7 @@ title: "Akıl Hastalığı Sebebiyle Boşanma"
 description: "Akıl hastalığı sebebiyle boşanma davası şartları, süreleri ve hukuki sonuçları"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2024-12-26
 layout: "layouts/article.njk"
 permalink: "/akil-hastaligi/"
 breadcrumbs:

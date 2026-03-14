@@ -21,11 +21,18 @@
 
   &__meta {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: $space-md;
     margin-bottom: $space-md;
     font-size: $text-sm;
     color: $gray-600;
+
+    span {
+      display: inline-flex;
+      align-items: center;
+    }
 
     a {
       color: $accent;
@@ -39,6 +46,7 @@
       width: 14px;
       height: 14px;
       margin-right: 4px;
+      flex-shrink: 0;
     }
   }
 

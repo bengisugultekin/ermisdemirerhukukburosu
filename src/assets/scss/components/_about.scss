@@ -69,13 +69,15 @@
 
   .section-title {
     text-align: left;
+    margin-bottom: $space-lg;
 
     h2 {
       color: $white;
+      margin-bottom: 0.25rem;
     }
 
     &::after {
-      margin: $space-sm 0 0;
+      margin: 0.5rem 0 0;
     }
   }
 }

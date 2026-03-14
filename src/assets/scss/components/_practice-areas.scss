@@ -3,7 +3,7 @@
 // ==============================================
 
 .practice-areas {
-  background: #000;
+  background: #1a1a1a;
 
   .section-label {
     color: rgba(255, 255, 255, 0.5);
@@ -24,7 +24,7 @@
   }
 
   @media (max-width: $bp-sm) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 

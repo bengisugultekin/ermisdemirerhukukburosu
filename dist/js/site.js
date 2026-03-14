@@ -105,27 +105,46 @@
     }
   }
 
-  // --- Article Filter Tabs ---
+  // --- Article Filter Tabs (max 8 gösterim) ---
+  const MAX_ARTICLES = 8;
   const filterBtns = document.querySelectorAll('[data-filter]');
   const filterItems = document.querySelectorAll('[data-category]');
+  const moreLink = document.getElementById('articlesMoreLink');
+
+  const filterLinks = {
+    'all': '/aile-hukuku/',
+    'aile-hukuku': '/aile-hukuku/',
+    'ceza-hukuku': '/ceza-hukuku/',
+    'icra-hukuku': '/icra-hukuku/',
+    'tuketici-hukuku': '/tuketici-hukuku/',
+    'dava-turleri': '/dava-turleri/'
+  };
+
+  function applyFilter(filter) {
+    let visibleCount = 0;
+    filterItems.forEach(item => {
+      const matches = filter === 'all' || item.dataset.category === filter;
+      if (matches && visibleCount < MAX_ARTICLES) {
+        item.classList.remove('is-hidden');
+        visibleCount++;
+      } else {
+        item.classList.add('is-hidden');
+      }
+    });
+    if (moreLink && filterLinks[filter]) {
+      moreLink.href = filterLinks[filter];
+    }
+  }
 
   if (filterBtns.length > 0 && filterItems.length > 0) {
+    // İlk yüklemede max 8 göster
+    applyFilter('all');
+
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        const filter = btn.dataset.filter;
-
-        // Update active button
         filterBtns.forEach(b => b.classList.remove('is-active'));
         btn.classList.add('is-active');
-
-        // Filter items
-        filterItems.forEach(item => {
-          if (filter === 'all' || item.dataset.category === filter) {
-            item.classList.remove('is-hidden');
-          } else {
-            item.classList.add('is-hidden');
-          }
-        });
+        applyFilter(btn.dataset.filter);
       });
     });
   }
@@ -182,6 +201,77 @@
         heroBgImg.style.transform = `translateY(${window.scrollY * 0.25}px)`;
       }
     }, { passive: true });
+  }
+
+  // --- Category Page Pagination ---
+  const ITEMS_PER_PAGE = 6;
+  const articlesContainer = document.getElementById('articles-container');
+
+  if (articlesContainer) {
+    const articles = Array.from(articlesContainer.querySelectorAll('[data-article-index]'));
+    const totalPages = Math.ceil(articles.length / ITEMS_PER_PAGE);
+    let currentPage = 1;
+
+    const paginationContainer = document.getElementById('pagination-container');
+    const paginationNumbers = document.getElementById('pagination-numbers');
+    const prevBtn = document.getElementById('pagination-prev');
+    const nextBtn = document.getElementById('pagination-next');
+
+    if (paginationContainer && totalPages > 1) {
+      // Create page number buttons
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = 'pagination__number';
+        pageBtn.textContent = i;
+        pageBtn.setAttribute('data-page', i);
+        if (i === 1) pageBtn.classList.add('active');
+
+        pageBtn.addEventListener('click', () => {
+          currentPage = i;
+          updatePagination();
+          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        paginationNumbers.appendChild(pageBtn);
+      }
+
+      function updatePagination() {
+        const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+        const endIdx = startIdx + ITEMS_PER_PAGE;
+
+        // Show/hide articles
+        articles.forEach((article, idx) => {
+          article.style.display = idx >= startIdx && idx < endIdx ? '' : 'none';
+        });
+
+        // Update button states
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+
+        // Update active page number
+        paginationNumbers.querySelectorAll('.pagination__number').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-page') == currentPage);
+        });
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          updatePagination();
+          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          updatePagination();
+          articlesContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      updatePagination();
+    }
   }
 
 })();

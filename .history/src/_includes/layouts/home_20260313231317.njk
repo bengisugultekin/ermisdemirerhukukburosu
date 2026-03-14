@@ -1,0 +1,346 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <picture>
+        <source srcset="/images/slider-main/grey-marble.webp" type="image/webp">
+        <img src="/images/slider-main/grey-marble.jpg" alt="Ermiş Hukuk Bürosu" loading="eager" width="1920" height="1080">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Hukukun Gücü, Deneyimin Güveni</h1>
+        <div class="hero__divider"></div>
+        <p class="hero__subtitle">30 yıllık tecrübe ile hukuki süreçlerinizde yanınızdayız. Etkin, hızlı ve güvenilir hukuki destek için doğru adrestesiniz.</p>
+        <div class="hero__actions">
+          <a href="#iletisim" class="btn btn--outline-white">Bize Ulaşın</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ===== PRACTICE AREAS ===== -->
+  <section class="practice-areas section" id="hizmetler" aria-labelledby="hizmetler-title">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Uzmanlık Alanlarımız</span>
+        <h2 id="hizmetler-title">Hizmetlerimiz</h2>
+      </div>
+
+      <div class="services-grid">
+        {% for service in services.categories %}
+        <div class="service-item" data-animate="fade-up" data-delay="{{ loop.index }}">
+          <div class="service-item__icon">
+            {{ service.svgIcon | safe }}
+          </div>
+          <h3 class="service-item__title">{{ service.title }}</h3>
+          <p class="service-item__desc">{{ service.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARTICLES ===== -->
+  {% set categoryImages = {
+    "aile-hukuku": { "webp": "/images/services/aile.webp", "jpg": "/images/services/aile.jpg", "alt": "Aile Hukuku" },
+    "ceza-hukuku": { "webp": "/images/services/ceza.webp", "jpg": "/images/services/ceza.jpg", "alt": "Ceza Hukuku" },
+    "icra-hukuku": { "webp": "/images/services/icra.webp", "jpg": "/images/services/icra.jpg", "alt": "İcra Hukuku" },
+    "gayrimenkul-hukuku": { "webp": "/images/services/gayri.webp", "jpg": "/images/services/gayri.jpg", "alt": "Gayrimenkul Hukuku" },
+    "is-hukuku": { "webp": "/images/services/isci.webp", "jpg": "/images/services/isci.jpg", "alt": "İş Hukuku" },
+    "ticaret-hukuku": { "webp": "/images/services/ticaret.webp", "jpg": "/images/services/ticaret.jpg", "alt": "Ticaret Hukuku" },
+    "tuketici-hukuku": { "webp": "/images/slider-main/book.webp", "jpg": "/images/slider-main/book.jpg", "alt": "Tüketici Hukuku" },
+    "dava-turleri": { "webp": "/images/slider-main/dava.webp", "jpg": "/images/slider-main/dava.jpg", "alt": "Dava Türleri" }
+  } %}
+
+  <section class="articles section" id="makaleler" aria-labelledby="makaleler-title">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Güncel Yazılar</span>
+        <h2 id="makaleler-title">Makaleler</h2>
+      </div>
+
+      <div class="articles__filters">
+        <button class="articles__filter-btn is-active" data-filter="all">Tümü</button>
+        <button class="articles__filter-btn" data-filter="aile-hukuku">Aile Hukuku</button>
+        <button class="articles__filter-btn" data-filter="ceza-hukuku">Ceza Hukuku</button>
+        <button class="articles__filter-btn" data-filter="icra-hukuku">İcra Hukuku</button>
+        <button class="articles__filter-btn" data-filter="tuketici-hukuku">Tüketici Hukuku</button>
+        <button class="articles__filter-btn" data-filter="dava-turleri">Dava Türleri</button>
+      </div>
+
+      <div class="articles__grid">
+        {% set displayCount = 0 %}
+        
+        {# Aile Hukuku - 2 makale #}
+        {% for article in collections["aile-hukuku"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Ceza Hukuku - 1 makale #}
+        {% for article in collections["ceza-hukuku"] %}
+          {% if loop.index <= 1 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# İcra Hukuku - 1 makale #}
+        {% for article in collections["icra-hukuku"] %}
+          {% if loop.index <= 1 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Tüketici Hukuku - 2 makale #}
+        {% for article in collections["tuketici-hukuku"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        {# Dava Türleri - 2 makale #}
+        {% for article in collections["dava-turleri"] %}
+          {% if loop.index <= 2 %}
+            {% set displayCount = displayCount + 1 %}
+            {% set category = article.data.category %}
+            {% set img = categoryImages[category] %}
+            <article class="articles__article card" data-category="{{ category }}" data-animate="fade-up" data-delay="{{ displayCount }}">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source srcset="{{ img.webp }}" type="image/webp">
+                  <img class="card__image" src="{{ img.jpg }}" alt="{{ img.alt }}" loading="lazy" width="400" height="220">
+                </picture>
+                <span class="card__badge card__badge--overlay">{{ article.data.categoryTitle }}</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="{{ article.url }}">{{ article.data.title }}</a>
+                </h3>
+                <p class="card__meta">
+                  <span class="card__meta-category">{{ article.data.categoryTitle }}</span>
+                  <span class="card__meta-date">{{ article.data.date | formatDate }}</span>
+                </p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="articles__more">
+        <a href="/aile-hukuku/" class="link-arrow">Tümünü Gör</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="hakkimizda" aria-labelledby="hakkimizda-title">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrapper" data-animate="slide-left">
+          <picture>
+            <source srcset="/images/about/handshake.webp" type="image/webp">
+            <img loading="lazy" src="/images/about/handshake.jpg" alt="Ermiş Hukuk Bürosu ekibi" width="600" height="450">
+          </picture>
+        </div>
+        <div class="about__content" data-animate="slide-right">
+          <div class="section-title">
+            <span class="section-label">Hakkımızda</span>
+            <h2 id="hakkimizda-title">Ermiş Hukuk Bürosu</h2>
+          </div>
+          <p>Alanında uzman kadrosu ile müvekkillerine en iyi şekilde uzun yıllardır hizmet vermektedir. Kaliteli ve etkin avukatlık hizmeti vermemiz beraberinde birçok kurumsal ve bireysel müvekkil ile çalışma imkanı sunmuştur.</p>
+          <p>Siz değerli müvekkil ve danışanlarımıza, hakkınızın tescil veya müdafaasında yürütülecek hukuki süreci şeffaf olarak anlatıyoruz. Duymak istediklerinizi değil duymanız gerekenleri söyleyerek, etkin ve güvenilir bir vekalet ilişkisi ile hukuki destek sunuyoruz.</p>
+          <div class="about__values">
+            <span class="about__value">Güvenilir</span>
+            <span class="about__value">Etik</span>
+            <span class="about__value">Dürüstlük</span>
+            <span class="about__value">Şeffaflık</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LAWYERS ===== -->
+  <section class="lawyers section" id="avukatlar" aria-labelledby="avukatlar-title">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Ekibimiz</span>
+        <h2 id="avukatlar-title">Avukatlarımız</h2>
+      </div>
+
+      <div class="lawyers__grid">
+        {% for lawyer in lawyers.team %}
+        <div class="lawyers__card" data-animate="fade-up" data-delay="{{ loop.index }}">
+          <div class="lawyers__content">
+            <div class="lawyers__header">
+              <h3 class="lawyers__name">{{ lawyer.name }}</h3>
+              {% if lawyer.linkedin %}
+              <a class="lawyers__linkedin-link" href="{{ lawyer.linkedin }}" target="_blank" rel="noopener" aria-label="{{ lawyer.name }} LinkedIn profili">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              {% endif %}
+            </div>
+            <p class="lawyers__title">{{ lawyer.title }}</p>
+            <p class="lawyers__bio">{{ lawyer.bio }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="iletisim" aria-labelledby="iletisim-title">
+    <div class="container">
+      <div class="section-title" data-animate="fade-up">
+        <span class="section-label">Bize Ulaşın</span>
+        <h2 id="iletisim-title">İletişim</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info" data-animate="fade-up">
+          <div class="contact__details">
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact__item-content">
+                <h4>Adresimiz</h4>
+                <address style="font-style: normal;">{{ site.contact.addressFull }}</address>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact__item-content">
+                <h4>Telefon</h4>
+                <div class="contact__item-links">
+                  <a href="tel:05553499588" class="contact__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>{{ site.contact.phone }}</span>
+                  </a>
+                  <a href="{{ site.social.whatsapp }}" target="_blank" rel="noopener" class="contact__link contact__link--whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    <span>{{ site.contact.phone }} (WhatsApp)</span>
+                  </a>
+                  <a href="tel:02325023908" class="contact__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>{{ site.contact.office }} (Ofis)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact__item-content">
+                <h4>E-posta</h4>
+                <a href="mailto:{{ site.contact.email }}" class="contact__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>{{ site.contact.email }}</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="contact__map" id="mapContainer" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512.136421880577!2d27.42538667013304!3d38.6172402580963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9634bdcf54a9d%3A0x287992abbe3bcb04!2zRVJNxLDFniBIVUtVSyBCw5xST1NVIHwgS2FyxZ_EsXlha2EgS2lyYSBBdnVrYXTEsSB8IEthcsWfxLF5YWthIEJvxZ9hbm1hIEF2dWthdMSxIHwgS2FyxZ_EsXlha2EgTWlyYXMgQXZ1a2F0xLEgfCBTaXRlIFnDtm5ldGltaSBBdnVrYXTEsQ!5e0!3m2!1sen!2str!4v1773419457441!5m2!1sen!2str">
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

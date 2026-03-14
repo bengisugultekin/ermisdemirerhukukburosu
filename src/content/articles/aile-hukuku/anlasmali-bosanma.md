@@ -3,7 +3,7 @@ title: "Anlaşmalı Boşanma (Eşlerin Anlaşması)"
 description: "Anlaşmalı boşanma davası şartları, süreçleri ve hukuki sonuçları hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2025-09-12
 layout: "layouts/article.njk"
 permalink: "/anlasmali-bosanma/"
 breadcrumbs:

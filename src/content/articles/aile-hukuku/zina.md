@@ -3,7 +3,7 @@ title: "Zina Sebebiyle Boşanma"
 description: "Zina sebebiyle boşanma davası şartları, süreleri ve hukuki sonuçları hakkında detaylı bilgi"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-03-31
+date: 2024-12-15
 layout: "layouts/article.njk"
 permalink: "/zina/"
 breadcrumbs:

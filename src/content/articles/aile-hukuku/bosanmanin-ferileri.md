@@ -3,7 +3,7 @@ title: "Boşanmanın Fer'ileri"
 description: "Boşanma davasının ferileri: maddi tazminat, manevi tazminat, nafaka ve velayet konuları"
 category: "aile-hukuku"
 categoryTitle: "Aile Hukuku"
-date: 2024-04-01
+date: 2024-09-07
 layout: "layouts/article.njk"
 permalink: "/bosanmanin-ferileri/"
 breadcrumbs:

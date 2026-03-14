@@ -3,7 +3,7 @@ title: "Tüketici Kavramı"
 description: "Tüketici kavramı nedir, tüketici tanımı ve tüketici hakları hakkında bilgi"
 category: "tuketici-hukuku"
 categoryTitle: "Tüketici Hukuku"
-date: 2024-04-01
+date: 2024-06-04
 layout: "layouts/article.njk"
 permalink: "/tuketici-kavrami/"
 breadcrumbs:

@@ -3,8 +3,19 @@
 // ==============================================
 
 .breadcrumb-section {
-  background: $black;
-  padding: calc($header-height + $space-xl) 0 $space-xl;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/bookshelf.webp') center / cover no-repeat fixed;
+  background-color: $black;
+  height: 280px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $space-xl;
+  }
 
   &__title {
     font-family: $font-heading;
@@ -22,6 +33,7 @@
     align-items: center;
     gap: $space-xs;
     font-size: $text-sm;
+    flex-wrap: wrap;
 
     li {
       display: flex;
@@ -36,7 +48,8 @@
       }
 
       &:last-child {
-        color: $accent;
+        color: $accent-dark;
+        font-weight: 600;
 
         &::after {
           display: none;

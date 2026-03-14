@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/bosanma/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/evliligin-sona-ermesi/</loc>
+    <loc>https://ermishukukburosu.av.tr/ziynet-esyalarinin-iadesi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -21,92 +11,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/suc-isleme/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/zina/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/aile-konutu-serhi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/akil-hastaligi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma-protokolu/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/bosanmanin-ferileri/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/edinilmis-mallara-tasfiyesi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/evlilik-birliginin-sarsilmasi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/mal-rejimleri/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/ortak-hayatin-kurulamamasi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/terk/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/imar-kirliligi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/menfi-tespit/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/nafakanin-arttirilmasi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/tasarrufun-iptali/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/ziynet-esyalarinin-iadesi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/banka-yasal-takip/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/ayipli-mal/</loc>
+    <loc>https://ermishukukburosu.av.tr/tuketici-kavrami/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -116,12 +21,102 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/tuketici-kavrami/</loc>
+    <loc>https://ermishukukburosu.av.tr/suc-isleme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/aile-hukuku/</loc>
+    <loc>https://ermishukukburosu.av.tr/bosanmanin-ferileri/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/zina/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/menfi-tespit/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/akil-hastaligi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/ortak-hayatin-kurulamamasi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/tasarrufun-iptali/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/ayipli-mal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/imar-kirliligi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/banka-yasal-takip/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/evlilik-birliginin-sarsilmasi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/edinilmis-mallara-tasfiyesi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/nafakanin-arttirilmasi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/mal-rejimleri/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/bosanma/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/anlasmali-bosanma-protokolu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/evliligin-sona-ermesi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/aile-konutu-serhi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/terk/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -131,24 +126,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/ceza-hukuku/</loc>
+    <loc>https://ermishukukburosu.av.tr/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/icra-hukuku/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/ticaret-hukuku/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ermishukukburosu.av.tr/is-hukuku/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://ermishukukburosu.av.tr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ermishukukburosu.av.tr/gayrimenkul-hukuku/</loc>
@@ -166,13 +151,28 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/about/</loc>
+    <loc>https://ermishukukburosu.av.tr/icra-hukuku/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ermishukukburosu.av.tr/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://ermishukukburosu.av.tr/ceza-hukuku/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/aile-hukuku/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/is-hukuku/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ermishukukburosu.av.tr/ticaret-hukuku/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
